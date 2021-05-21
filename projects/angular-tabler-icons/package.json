@@ -1,0 +1,33 @@
+{
+  "name": "angular-tabler-icons",
+  "version": "1.41.0",
+  "description": "Tabler Icons components library for your Angular applications",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pierreavn/angular-tabler-icons.git"
+  },
+  "keywords": [
+    "angular2",
+    "angular",
+    "tabler",
+    "icons",
+    "svg",
+    "2",
+    "ui",
+    "components",
+    "library"
+  ],
+  "author": "Pierre Avinain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pierreavn/angular-tabler-icons/issues"
+  },
+  "homepage": "https://github.com/pierreavn/angular-tabler-icons",
+  "peerDependencies": {
+    "@angular/common": "^11.0.4",
+    "@angular/core": "^11.0.4"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}
