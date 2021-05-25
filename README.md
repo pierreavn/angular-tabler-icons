@@ -1,6 +1,6 @@
 # angular-tabler-icons
 
-[![npm](https://img.shields.io/npm/v/angular-tabler-icons.svg?style=flat-square)]()
+[![tabler-icons-version](https://img.shields.io/badge/Tabler%20Icons-v1.41-%23206bc4)](https://tabler-icons.io)
 [![license](https://img.shields.io/npm/l/angular-tabler-icons.svg?style=flat-square)]()
 
 ## Description
