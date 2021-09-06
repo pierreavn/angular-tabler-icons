@@ -127,4 +127,5 @@ Here are few tips to start:
 ```bash
 $ npm run lib:generate  # generate components from Tabler Icons
 $ npm run lib:build  # build angular library
+$ cd dist/angular-tabler-icons && npm publish  # publish package
 ```
