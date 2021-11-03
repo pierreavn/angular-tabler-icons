@@ -42,7 +42,12 @@ async function generate() {
 
   // Generate each icon file
   const sourceIconFiles = await fs.readdir(PATHS.ICONS_SRC);
+  let i = 0;
   for (const filename of sourceIconFiles) {
+    if (filename === ".DS_Store") {
+      continue;
+    }
+
     const iconNameHyphens = stripExtension(filename);
     const iconNameCamel = uppercamelcase('icon-' + iconNameHyphens);
 
