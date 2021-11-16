@@ -1,6 +1,6 @@
 # angular-tabler-icons
 
-[![tabler-icons-version](https://img.shields.io/badge/Tabler%20Icons-v1.42-%23206bc4)](https://tabler-icons.io)
+[![tabler-icons-version](https://img.shields.io/badge/Tabler%20Icons-v1.43-%23206bc4)](https://tabler-icons.io)
 [![license](https://img.shields.io/npm/l/angular-tabler-icons.svg?style=flat-square)]()
 
 ## Description
@@ -75,7 +75,7 @@ After importing the _IconsModule_ in your feature or shared module, use the icon
 
 List of available icons: https://tabler-icons.io/  
   
-This version includes **Tabler Icons v1.42**, see [changelog](https://tabler-icons.io/changelog) to know which icons are available.
+This version includes **Tabler Icons v1.43**, see [changelog](https://tabler-icons.io/changelog) to know which icons are available.
 
 
 ## Styling icons
@@ -129,3 +129,16 @@ $ npm run lib:generate  # generate components from Tabler Icons
 $ npm run lib:build  # build angular library
 $ cd dist/angular-tabler-icons && npm publish  # publish package
 ```
+
+## How to rebuild for newer tabler icons version
+
+1. Update `@tabler/icons` version into `package.json`
+2. Update version into `package.json` and `projets/angular-tabler-icons/package.json`
+3. Update the two versions into `README.md`
+4. Update tabler icons package: `npm update`
+5. Regenerate tabler icons components: `npm run lib:generate`
+6. Build angular library: `npm run lib:build`
+7. Commit changes: `git add . && git commit -am 'Version 1.x.0'`
+8. Create tag: `git tag 1.x.0`
+9. Push commit & tag: `git push origin --tags`
+10. Publish package: `cd dist/angular-tabler-icons && npm publish`
