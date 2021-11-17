@@ -127,18 +127,9 @@ Here are few tips to start:
 ```bash
 $ npm run lib:generate  # generate components from Tabler Icons
 $ npm run lib:build  # build angular library
-$ cd dist/angular-tabler-icons && npm publish  # publish package
 ```
 
 ## How to rebuild for newer tabler icons version
 
-1. Update `@tabler/icons` version into `package.json`
-2. Update version into `package.json` and `projets/angular-tabler-icons/package.json`
-3. Update the two versions into `README.md`
-4. Update tabler icons package: `npm update`
-5. Regenerate tabler icons components: `npm run lib:generate`
-6. Build angular library: `npm run lib:build`
-7. Commit changes: `git add . && git commit -am 'Version 1.x.0'`
-8. Create tag: `git tag 1.x.0`
-9. Push commit & tag: `git push origin --tags`
-10. Publish package: `cd dist/angular-tabler-icons && npm publish`
+1. Run GitHub action workflow `Automatic PR on Tabler Icons Release`, with new Tabler Icons Version (e.g. `1.44.0`). This workflow will create automatically a new Pull Request.
+2. Approve and Merge the generated Pull Request. Library is automatically rebuilt and package published, with the GItHub action workflow `Build and Publish package`.
