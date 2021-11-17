@@ -75,7 +75,7 @@ After importing the _IconsModule_ in your feature or shared module, use the icon
 
 List of available icons: https://tabler-icons.io/  
   
-This version includes **Tabler Icons v1.43**, see [changelog](https://tabler-icons.io/changelog) to know which icons are available.
+This version includes **Tabler Icons v1.44.0**, see [changelog](https://tabler-icons.io/changelog) to know which icons are available.
 
 
 ## Styling icons
