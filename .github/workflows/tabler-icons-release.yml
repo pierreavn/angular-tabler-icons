@@ -1,0 +1,43 @@
+name: Automatic PR on Tabler Icons Release
+
+on: 
+  workflow_dispatch:
+    inputs:
+      tabler_version:
+        description: 'Tabler Icons Version (x.y.z)'     
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+          registry-url: 'https://registry.npmjs.org'
+      - name: Set Angular library version
+        working-directory: ./projects/angular-tabler-icons
+        run: npm version ${{ github.event.inputs.tabler_version }} --git-tag-version=false
+      - name: Update Tabler Icons version
+        run: |
+          sed -r -i 's/Tabler Icons v[0-9.]+/Tabler Icons v${{ github.event.inputs.tabler_version }}/' README.md
+          npm install @tabler/icons@${{ github.event.inputs.tabler_version }}
+      - name: Rebuild icons
+        run: npm run lib:generate
+      - name: Setup git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: "[AUTO] Tabler Icons v${{ github.event.inputs.tabler_version }}"
+          body: "Automated changes by GitHub action workflow for Tabler Icons v${{ github.event.inputs.tabler_version }} integration."
+          labels: "tabler release"
+          commit-message: "Tabler Icons v${{ github.event.inputs.tabler_version }}"
+          branch: "release/${{ github.event.inputs.tabler_version }}"
+          delete-branch: true
+          reviewers: "pierreavn"
