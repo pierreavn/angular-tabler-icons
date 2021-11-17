@@ -1,0 +1,26 @@
+name: Build and Publish package
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+          registry-url: 'https://registry.npmjs.org'
+      - name: Install packages
+        run: npm install
+      - name: Build Angular library
+        run: npm run lib:build
+      - name: Publish package to NPM
+        working-directory: ./dist/angular-tabler-icons
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
