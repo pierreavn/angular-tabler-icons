@@ -1,7 +1,8 @@
 # angular-tabler-icons
 
-[![tabler-icons-version](https://img.shields.io/badge/Tabler%20Icons-v1.53.0-%23206bc4)](https://tabler-icons.io)
+[![tabler-icons-version](https://img.shields.io/badge/Tabler%20Icons-v1.53.0-%23206bc4?style=flat-square)](https://tabler-icons.io)
 [![license](https://img.shields.io/npm/l/angular-tabler-icons.svg?style=flat-square)]()
+[![downloads](https://img.shields.io/npm/dm/angular-tabler-icons?style=flat-square)]()
 
 ## Description
 
@@ -15,6 +16,8 @@ _1. Install the package_
 
 ```sh
 npm install angular-tabler-icons
+# or
+yarn add angular-tabler-icons
 ```
 
 _2. Generate a module to host the icons you'll import_
@@ -83,7 +86,7 @@ This version includes **Tabler Icons v1.53.0**, see [changelog](https://tabler-i
 Each icon can be styled separately with CSS:
 
 ```html
-<i-tabler name="camera" class="big fill-red stroke-blue"></i-tabler>
+<i-tabler name="camera" class="big fill-red stroke-blue thin"></i-tabler>
 ```
 
 ```css
@@ -98,6 +101,10 @@ Each icon can be styled separately with CSS:
 
 .stroke-blue {
   color: blue;
+}
+
+.thin {
+  stroke-width: 1px;
 }
 ```
 
