@@ -1,12 +1,12 @@
 # angular-tabler-icons
 
-[![tabler-icons-version](https://img.shields.io/badge/Tabler%20Icons-v1.57.0-%23206bc4?style=flat-square)](https://tabler-icons.io)
+[![tabler-icons-version](https://img.shields.io/badge/Tabler%20Icons-v1.58.0-%23206bc4?style=flat-square)](https://tabler-icons.io)
 [![license](https://img.shields.io/npm/l/angular-tabler-icons.svg?style=flat-square)]()
 [![downloads](https://img.shields.io/npm/dm/angular-tabler-icons?style=flat-square)]()
 
 ## Description
 
-This package allows you to use the [Tabler Icons](https://tabler-icons.io/) in your angular applications. Tabler Icons is a set of over 1500 free MIT-licensed high-quality SVG icons for you to use in your web projects. Each icon is designed on a 24x24 grid and a 2px stroke.  
+This package allows you to use the [Tabler Icons](https://tabler-icons.io/) in your angular applications. Tabler Icons is a set of over 1600 free MIT-licensed high-quality SVG icons for you to use in your web projects. Each icon is designed on a 24x24 grid and a 2px stroke.  
   
 Inspired by [angular-feather](https://github.com/michaelbazos/angular-feather), thank you to the author.
 
@@ -78,7 +78,7 @@ After importing the _IconsModule_ in your feature or shared module, use the icon
 
 List of available icons: https://tabler-icons.io/  
   
-This version includes **Tabler Icons v1.57.0**, see [changelog](https://tabler-icons.io/changelog) to know which icons are available.
+This version includes **Tabler Icons v1.58.0**, see [changelog](https://tabler-icons.io/changelog) to know which icons are available.
 
 
 ## Styling icons
