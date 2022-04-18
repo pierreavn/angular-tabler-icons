@@ -2,8 +2,8 @@ name: Build and Publish package
 
 on:
   push:
-    branches:
-      - master
+    tags:
+      - '*'
 
 jobs:
   build:

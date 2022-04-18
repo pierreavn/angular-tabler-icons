@@ -138,6 +138,8 @@ $ npm run lib:build  # build angular library
 
 ## How to rebuild for newer tabler icons version
 
-1. Run GitHub action workflow `Automatic PR on Tabler Icons Release`, with new Tabler Icons version (e.g. `1.44.0`). This workflow will create automatically a new Pull Request.
-2. Approve and Merge the generated Pull Request. Library is automatically rebuilt and package published, with the GItHub action workflow `Build and Publish package`.
-3. Create a release with the new Tabler Icons version.
+1. Run GitHub actions workflow `Automatic PR on Tabler Icons Release`, with new Tabler Icons version (e.g. `1.65.0`). This workflow will create automatically a new Pull Request.
+2. Approve and Merge the generated Pull Request.
+3. Create a release/tag with the new Tabler Icons version.
+  
+Package is automatically rebuilt and published, with the GitHub actions workflow `Build and Publish package`.
