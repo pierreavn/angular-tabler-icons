@@ -1,4 +1,5 @@
 export const IconBallFootball = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/ball-football</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <circle cx="12" cy="12" r="9" />
   <path d="M12 7l4.76 3.45l-1.76 5.55h-6l-1.76 -5.55z" />

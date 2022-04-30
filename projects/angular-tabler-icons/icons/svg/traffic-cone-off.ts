@@ -1,4 +1,5 @@
 export const IconTrafficConeOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/traffic-cone-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M4 20h16" />
   <path d="M9.4 10h.6m4 0h.6" />

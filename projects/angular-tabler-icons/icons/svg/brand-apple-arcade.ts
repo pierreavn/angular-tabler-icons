@@ -1,4 +1,5 @@
 export const IconBrandAppleArcade = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/brand-apple-arcade</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <circle cx="12" cy="5" r="2" />
   <path d="M20 12.5v4.75a0.734 .734 0 0 1 -.055 .325a0.704 .704 0 0 1 -.348 .366l-5.462 2.58a4.998 4.998 0 0 1 -4.27 0l-5.462 -2.58a0.705 .705 0 0 1 -.401 -.691l-.002 -4.75" />

@@ -1,4 +1,5 @@
 export const IconFileVector = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/file-vector</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M14 3v4a1 1 0 0 0 1 1h4" />
   <circle cx="9.5" cy="16.5" r="1.5" />

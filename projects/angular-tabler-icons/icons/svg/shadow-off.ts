@@ -1,4 +1,5 @@
 export const IconShadowOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/shadow-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M5.634 5.638a9 9 0 0 0 12.728 12.727m1.68 -2.32a9 9 0 0 0 -12.086 -12.088" />
   <path d="M16 12h2" />

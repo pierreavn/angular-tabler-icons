@@ -1,4 +1,5 @@
 export const IconFileDatabase = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/file-database</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
     <ellipse cx="12" cy="12.75" rx="4" ry="1.75" />
   <path d="M8 12.5v3.75c0 .966 1.79 1.75 4 1.75s4 -.784 4 -1.75v-3.75" />

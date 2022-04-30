@@ -1,4 +1,5 @@
 export const IconBrandDribbble = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/brand-dribbble</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <circle cx="12" cy="12" r="9" />
   <path d="M9 3.6c5 6 7 10.5 7.5 16.2" />

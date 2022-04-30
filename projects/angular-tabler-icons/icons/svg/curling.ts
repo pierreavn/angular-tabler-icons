@@ -1,4 +1,5 @@
 export const IconCurling = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/curling</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <rect x="4" y="9" width="16" height="10" rx="4" />
   <path d="M4 14h16" />

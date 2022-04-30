@@ -1,4 +1,5 @@
 export const IconBrandTripadvisor = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/brand-tripadvisor</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <circle cx="6.5" cy="13.5" r="1.5" />
   <circle cx="17.5" cy="13.5" r="1.5" />

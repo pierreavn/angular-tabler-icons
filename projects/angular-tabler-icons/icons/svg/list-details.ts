@@ -1,4 +1,5 @@
 export const IconListDetails = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/list-details</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M13 5h8" />
   <path d="M13 9h5" />

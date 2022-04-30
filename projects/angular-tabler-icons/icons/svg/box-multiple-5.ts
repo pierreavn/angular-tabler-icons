@@ -1,4 +1,5 @@
 export const IconBoxMultiple5 = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/box-multiple-5</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <rect x="7" y="3" width="14" height="14" rx="2" />
   <path d="M12 14h2a2 2 0 1 0 0 -4h-2v-4h4" />

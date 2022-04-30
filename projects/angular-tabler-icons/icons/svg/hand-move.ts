@@ -1,4 +1,5 @@
 export const IconHandMove = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/hand-move</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
   <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />

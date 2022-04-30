@@ -1,4 +1,5 @@
 export const IconBasketOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/basket-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M7 10l1.359 -1.63" />
   <path d="M10.176 6.188l1.824 -2.188l5 6" />

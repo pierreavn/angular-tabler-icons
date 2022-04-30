@@ -1,4 +1,5 @@
 export const IconMicrophoneOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/microphone-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <line x1="3" y1="3" x2="21" y2="21" />
   <path d="M9 5a3 3 0 0 1 6 0v5a3 3 0 0 1 -.13 .874m-2 2a3 3 0 0 1 -3.87 -2.872v-1" />

@@ -1,4 +1,5 @@
 export const IconWritingOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/writing-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M16 7h4" />
   <path d="M16 16v1l2 2l.5 -.5m1.5 -2.5v-11c0 -1.121 -.879 -2 -2 -2s-2 .879 -2 2v7" />

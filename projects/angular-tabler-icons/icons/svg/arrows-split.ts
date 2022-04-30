@@ -1,4 +1,5 @@
 export const IconArrowsSplit = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/arrows-split</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M21 17h-8l-3.5 -5h-6.5" />
   <path d="M21 7h-8l-3.495 5" />
