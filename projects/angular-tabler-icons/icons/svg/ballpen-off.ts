@@ -1,4 +1,5 @@
 export const IconBallpenOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/ballpen-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M14 6l7 7l-2 2" />
   <path d="M10 10l-4.172 4.172a2.828 2.828 0 1 0 4 4l4.172 -4.172" />

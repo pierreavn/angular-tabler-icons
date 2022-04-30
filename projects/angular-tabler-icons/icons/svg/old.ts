@@ -1,4 +1,5 @@
 export const IconOld = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/old</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M11 21l-1 -4l-2 -3v-6" />
   <path d="M5 14l-1 -3l4 -3l3 2l3 .5" />

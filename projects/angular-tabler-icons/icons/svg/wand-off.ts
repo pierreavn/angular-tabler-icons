@@ -1,4 +1,5 @@
 export const IconWandOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/wand-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M10.5 10.5l-7.5 7.5l3 3l7.5 -7.5m2 -2l5.5 -5.5l-3 -3l-5.5 5.5" />
   <path d="M15 6l3 3" />

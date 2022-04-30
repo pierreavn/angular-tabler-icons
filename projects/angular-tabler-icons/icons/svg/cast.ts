@@ -1,4 +1,5 @@
 export const IconCast = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/cast</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <line x1="3" y1="19" x2="3.01" y2="19" />
   <path d="M7 19a4 4 0 0 0 -4 -4" />

@@ -1,4 +1,5 @@
 export const IconTrain = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/train</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M21 13c0 -3.87 -3.37 -7 -10 -7h-8" />
   <path d="M3 15h16a2 2 0 0 0 2 -2" />

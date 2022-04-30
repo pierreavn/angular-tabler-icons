@@ -1,4 +1,5 @@
 export const IconTank = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/tank</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <rect x="2" y="12" width="18" height="6" rx="3" />
   <path d="M6 12l1 -5h5l3 5" />

@@ -1,4 +1,5 @@
 export const IconSwitch = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/switch</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <polyline points="15 4 19 4 19 8" />
   <line x1="14.75" y1="9.25" x2="19" y2="4" />

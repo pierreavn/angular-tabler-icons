@@ -1,4 +1,5 @@
 export const IconMarqueeOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/marquee-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M4 6c0 -.556 .227 -1.059 .593 -1.421" />
   <path d="M9 4h1.5" />

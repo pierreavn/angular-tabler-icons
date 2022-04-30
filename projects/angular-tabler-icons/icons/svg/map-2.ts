@@ -1,4 +1,5 @@
 export const IconMap2 = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/map-2</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <line x1="18" y1="6" x2="18" y2="6.01" />
   <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />

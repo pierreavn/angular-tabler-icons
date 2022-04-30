@@ -1,4 +1,5 @@
 export const IconEyeglassOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/eyeglass-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M5.536 5.546l-2.536 8.454" />
   <path d="M16 4h2l3 10" />

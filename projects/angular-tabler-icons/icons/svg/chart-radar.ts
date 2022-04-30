@@ -1,4 +1,5 @@
 export const IconChartRadar = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/chart-radar</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M12 3l9.5 7l-3.5 11h-12l-3.5 -11z" />
   <path d="M12 7.5l5.5 4l-2.5 5.5h-6.5l-2 -5.5z" />

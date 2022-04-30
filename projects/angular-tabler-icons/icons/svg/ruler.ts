@@ -1,4 +1,5 @@
 export const IconRuler = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/ruler</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M5 4h14a1 1 0 0 1 1 1v5a1 1 0 0 1 -1 1h-7a1 1 0 0 0 -1 1v7a1 1 0 0 1 -1 1h-5a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1" />
   <line x1="4" y1="8" x2="6" y2="8" />

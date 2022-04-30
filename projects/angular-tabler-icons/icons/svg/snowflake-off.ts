@@ -1,4 +1,5 @@
 export const IconSnowflakeOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/snowflake-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M10 4l2 1l2 -1" />
   <path d="M12 2v6m1.196 1.186l1.804 1.034" />

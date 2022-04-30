@@ -1,4 +1,5 @@
 export const IconFoldUp = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <desc>Download more icon variants from https://tabler-icons.io/i/fold-up</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M12 13v-8l-3 3m6 0l-3 -3" />
   <line x1="9" y1="17" x2="10" y2="17" />
