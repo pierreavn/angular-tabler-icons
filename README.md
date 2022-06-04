@@ -108,6 +108,32 @@ Each icon can be styled separately with CSS:
 }
 ```
 
+## Options
+
+Some options are available to configure the module:
+
+```ts
+import { environment } from '../environments/environment';
+import { TablerIconsModule } from 'angular-tabler-icons';
+import * as TablerIcons from 'angular-tabler-icons/icons';
+
+@NgModule({
+  imports: [
+    TablerIconsModule.pick(TablerIcons, {
+
+      // Ignore warnings, such as "Tabler Icon not found"
+      ignoreWarnings: true,
+      ignoreWarnings: environment.production,
+
+    })
+  ],
+  exports: [
+    TablerIconsModule
+  ]
+})
+export class IconsModule { }
+```
+
 ## Pick all icons
 
 You can import all icons at once by doing the following. However, keep in mind that by doing this, all icons will end up in your application bundle. While this may not be much of an issue for prototyping, **it is not recommended for any application that you plan to release**.
@@ -132,8 +158,8 @@ export class IconsModule { }
 Feel free to report issues or to contibute to this project!  
 Here are few tips to start:
 ```bash
-$ npm run lib:generate  # generate components from Tabler Icons
-$ npm run lib:build  # build angular library
+$ yarn lib:generate  # generate components from Tabler Icons
+$ yarn lib:build  # build angular library
 ```
 
 ## How to rebuild for newer tabler icons version

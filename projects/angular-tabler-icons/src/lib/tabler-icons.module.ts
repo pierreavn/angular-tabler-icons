@@ -1,6 +1,7 @@
 import { NgModule, ModuleWithProviders, Optional } from '@angular/core';
 import { TablerIconComponent } from './tabler-icon.component';
-import { Icons } from './icons.provider';
+import { OptionsProvider } from './options.provider';
+import { OptionIcons, Options } from './options.interfaces';
 
 
 @NgModule({
@@ -13,9 +14,9 @@ import { Icons } from './icons.provider';
 })
 export class TablerIconsModule {
   constructor(
-    @Optional() private icons: Icons
+    @Optional() private options: OptionsProvider
   ) {
-    if ( !this.icons ) {
+    if ( !this.options ) {
       throw new Error(
         `No icon provided. Make sure to use 'TablerIconsModule.pick({ ... })' when importing the module\n` +
         `Refer to documentation on https://github.com/pierreavn/angular-tabler-icons`
@@ -23,11 +24,22 @@ export class TablerIconsModule {
     }
   }
 
-  static pick(icons: {[key: string]: string}): ModuleWithProviders<TablerIconsModule> {
+  /**
+   * Initialize module with given icons and options
+   * @param icons
+   * @returns Module with options
+   */
+  static pick(icons: OptionIcons, options?: Options): ModuleWithProviders<TablerIconsModule> {
     return {
       ngModule: TablerIconsModule,
       providers: [
-        { provide: Icons, multi: true, useValue: icons }
+        {
+          provide: OptionsProvider,
+          useValue: {
+            icons,
+            ...options
+          }
+        }
       ]
     };
   }
