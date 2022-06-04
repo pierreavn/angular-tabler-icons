@@ -28,18 +28,6 @@
             "tsConfig": "projects/angular-tabler-icons/tsconfig.spec.json",
             "karmaConfig": "projects/angular-tabler-icons/karma.conf.js"
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/angular-tabler-icons/tsconfig.lib.json",
-              "projects/angular-tabler-icons/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
         }
       }
     }
