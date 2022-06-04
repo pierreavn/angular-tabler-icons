@@ -1,5 +1,6 @@
 import { Component, ElementRef, Input, Inject, ChangeDetectorRef, OnChanges, SimpleChanges } from '@angular/core';
-import { Icons } from './icons.provider';
+import { Options } from './options.interfaces';
+import { OptionsProvider } from './options.provider';
 import { uppercamelcase } from './utils';
 
 
@@ -15,15 +16,13 @@ export class TablerIconComponent implements OnChanges {
   constructor(
     @Inject(ElementRef) private elem: ElementRef,
     @Inject(ChangeDetectorRef) private changeDetector: ChangeDetectorRef,
-    @Inject(Icons) private icons: Icons
+    @Inject(OptionsProvider) private options: Options
   ) {}
 
   ngOnChanges(changes: SimpleChanges) {
-    // icons are provided as an array of objects because of "multi: true"
-    const icons = Object.assign({}, ...(this.icons as any as object[]));
-    const svg = icons[ "Icon" + uppercamelcase(changes.name.currentValue) ] || '';
+    const svg = this.options.icons?.[`Icon${uppercamelcase(changes.name.currentValue)}`] ?? '';
 
-    if (!svg) {
+    if (!svg && !this.options.ignoreWarnings) {
       console.warn(
         `Tabler Icon not found: ${changes.name.currentValue}\n` +
         `Refer to documentation on https://github.com/pierreavn/angular-tabler-icons`
