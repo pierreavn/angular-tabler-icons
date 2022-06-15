@@ -15,10 +15,10 @@ jobs:
         with:
           node-version: '14.x'
           registry-url: 'https://registry.npmjs.org'
-      - name: Install packages
-        run: npm install
+      - name: Install dependencies
+        run: yarn
       - name: Build Angular library
-        run: npm run lib:build
+        run: yarn lib:build
       - name: Publish package to NPM
         working-directory: ./dist/angular-tabler-icons
         run: npm publish
