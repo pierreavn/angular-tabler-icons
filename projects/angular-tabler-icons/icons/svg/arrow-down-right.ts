@@ -1,5 +1,4 @@
 export const IconArrowDownRight = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/arrow-down-right</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <line x1="7" y1="7" x2="17" y2="17" />
   <polyline points="17 8 17 17 8 17" />

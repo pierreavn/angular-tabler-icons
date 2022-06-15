@@ -1,5 +1,4 @@
 export const IconDeviceComputerCameraOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/device-computer-camera-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M6.15 6.153a7 7 0 0 0 9.696 9.696m2 -2a7 7 0 0 0 -9.699 -9.695" />
   <path d="M9.13 9.122a3 3 0 0 0 3.743 3.749m2 -2a3 3 0 0 0 -3.737 -3.736" />

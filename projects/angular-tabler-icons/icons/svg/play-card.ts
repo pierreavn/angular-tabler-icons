@@ -1,5 +1,4 @@
 export const IconPlayCard = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/play-card</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <rect transform="rotate(90 12 12)" x="3" y="5" width="18" height="14" rx="2" />
   <line x1="8" y1="6" x2="8.01" y2="6" />

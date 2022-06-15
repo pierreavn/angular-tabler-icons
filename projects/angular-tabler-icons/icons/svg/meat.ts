@@ -1,5 +1,4 @@
 export const IconMeat = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/meat</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M13.62 8.382l1.966 -1.967a2 2 0 1 1 3.414 -1.415a2 2 0 1 1 -1.413 3.414l-1.82 1.821" />
     <ellipse transform="rotate(45 8.025 16.475)" cx="8.025" cy="16.475" rx="7" ry="3" />

@@ -1,5 +1,4 @@
 export const IconChartCandle = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/chart-candle</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <rect x="4" y="6" width="4" height="5" rx="1" />
   <line x1="6" y1="4" x2="6" y2="6" />

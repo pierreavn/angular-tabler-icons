@@ -1,5 +1,4 @@
 export const IconArrowsUp = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/arrows-up</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <line x1="17" y1="3" x2="17" y2="21" />
   <path d="M4 6l3 -3l3 3" />

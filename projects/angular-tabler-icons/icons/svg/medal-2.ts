@@ -1,5 +1,4 @@
 export const IconMedal2 = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/medal-2</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M9 3h6l3 7l-6 2l-6 -2z" />
   <path d="M12 12l-3 -9" />

@@ -1,5 +1,4 @@
 export const IconSubtask = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/subtask</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <line x1="6" y1="9" x2="12" y2="9" />
   <line x1="4" y1="5" x2="8" y2="5" />

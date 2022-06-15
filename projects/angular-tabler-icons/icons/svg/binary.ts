@@ -1,5 +1,4 @@
 export const IconBinary = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/binary</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M11 10v-5h-1m8 14v-5h-1" />
   <rect x="15" y="5" width="3" height="5" rx=".5" />

@@ -1,5 +1,4 @@
 export const IconDisabled = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/disabled</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <circle cx="11" cy="5" r="2" />
   <polyline points="11 7 11 15 15 15 19 20" />

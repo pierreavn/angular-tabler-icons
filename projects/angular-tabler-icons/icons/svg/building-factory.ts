@@ -1,5 +1,4 @@
 export const IconBuildingFactory = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/building-factory</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M4 21c1.147 -4.02 1.983 -8.027 2 -12h6c.017 3.973 .853 7.98 2 12" />
   <path d="M12.5 13h4.5c.025 2.612 .894 5.296 2 8" />

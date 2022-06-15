@@ -1,5 +1,4 @@
 export const IconGeometry = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/geometry</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M7 21l4 -12m2 0l1.48 4.439m.949 2.847l1.571 4.714" />
   <circle cx="12" cy="7" r="2" />

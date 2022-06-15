@@ -1,5 +1,4 @@
 export const IconWalk = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/walk</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <circle cx="13" cy="4" r="1" />
   <line x1="7" y1="21" x2="10" y2="17" />

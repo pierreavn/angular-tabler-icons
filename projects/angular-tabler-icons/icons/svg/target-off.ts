@@ -1,5 +1,4 @@
 export const IconTargetOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/target-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M11.286 11.3a1 1 0 0 0 1.41 1.419" />
   <path d="M8.44 8.49a5 5 0 0 0 7.098 7.044m1.377 -2.611a5 5 0 0 0 -5.846 -5.836" />

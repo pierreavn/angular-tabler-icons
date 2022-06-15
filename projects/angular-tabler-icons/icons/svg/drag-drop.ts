@@ -1,5 +1,4 @@
 export const IconDragDrop = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/drag-drop</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M19 11v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
   <path d="M13 13l9 3l-4 2l-2 4l-3 -9" />

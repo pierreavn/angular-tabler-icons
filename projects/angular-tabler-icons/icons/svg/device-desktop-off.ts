@@ -1,5 +1,4 @@
 export const IconDeviceDesktopOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/device-desktop-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M8 4h12a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1m-4 0h-12a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1" />
   <line x1="7" y1="20" x2="17" y2="20" />

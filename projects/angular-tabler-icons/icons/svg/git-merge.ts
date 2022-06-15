@@ -1,5 +1,4 @@
 export const IconGitMerge = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/git-merge</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <circle cx="7" cy="18" r="2" />
   <circle cx="7" cy="6" r="2" />

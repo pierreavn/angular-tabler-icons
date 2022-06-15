@@ -1,5 +1,4 @@
 export const IconBrandNytimes = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/brand-nytimes</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M11.036 5.058a8.001 8.001 0 1 0 8.706 9.965" />
   <path d="M12 21v-11l-7.5 4" />

@@ -1,5 +1,4 @@
 export const IconKey = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/key</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <circle cx="8" cy="15" r="4" />
   <line x1="10.85" y1="12.15" x2="19" y2="4" />

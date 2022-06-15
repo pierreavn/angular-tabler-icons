@@ -1,5 +1,4 @@
 export const IconHeadphonesOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/headphones-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <line x1="3" y1="3" x2="21" y2="21" />
   <rect x="4" y="13" width="5" height="7" rx="2" />

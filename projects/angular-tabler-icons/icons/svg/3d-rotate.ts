@@ -1,5 +1,4 @@
 export const Icon3dRotate = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/3d-rotate</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M7 15.5l4 -2.5" />
   <path d="M3 13l4 2.5v4.996l4 -2.496v-5l-4 -2.5z" />

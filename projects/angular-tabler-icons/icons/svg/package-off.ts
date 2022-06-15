@@ -1,5 +1,4 @@
 export const IconPackageOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/package-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M8.812 4.793l3.188 -1.793l8 4.5v8.5m-2.282 1.784l-5.718 3.216l-8 -4.5v-9l2.223 -1.25" />
   <path d="M14.543 10.57l5.457 -3.07" />

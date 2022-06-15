@@ -1,5 +1,4 @@
 export const IconVirusSearch = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/virus-search</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M17 12a5 5 0 1 0 -5 5" />
   <path d="M12 7v-4m-1 0h2" />

@@ -1,5 +1,4 @@
 export const IconDisabledOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/disabled-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M11 7a2 2 0 1 0 -2 -2" />
   <path d="M11 11v4h4l4 5" />

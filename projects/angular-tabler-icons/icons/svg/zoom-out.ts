@@ -1,5 +1,4 @@
 export const IconZoomOut = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/zoom-out</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <circle cx="10" cy="10" r="7" />
   <line x1="7" y1="10" x2="13" y2="10" />

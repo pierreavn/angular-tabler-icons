@@ -1,5 +1,4 @@
 export const IconSatellite = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/satellite</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M3.707 6.293l2.586 -2.586a1 1 0 0 1 1.414 0l5.586 5.586a1 1 0 0 1 0 1.414l-2.586 2.586a1 1 0 0 1 -1.414 0l-5.586 -5.586a1 1 0 0 1 0 -1.414z" />
   <path d="M6 10l-3 3l3 3l3 -3" />
