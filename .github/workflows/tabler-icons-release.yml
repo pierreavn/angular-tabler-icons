@@ -19,13 +19,15 @@ jobs:
       - name: Set Angular library version
         working-directory: ./projects/angular-tabler-icons
         run: npm version ${{ github.event.inputs.tabler_version }} --git-tag-version=false
+      - name: Install dependencies
+        run: yarn
       - name: Update Tabler Icons version
         run: |
           sed -r -i 's/Tabler%20Icons-v[0-9.]+-/Tabler%20Icons-v${{ github.event.inputs.tabler_version }}-/' README.md
           sed -r -i 's/Tabler Icons v[0-9.]+/Tabler Icons v${{ github.event.inputs.tabler_version }}/' README.md
-          npm install @tabler/icons@${{ github.event.inputs.tabler_version }}
+          yarn add @tabler/icons@${{ github.event.inputs.tabler_version }}
       - name: Rebuild icons
-        run: npm run lib:generate
+        run: yarn lib:generate
       - name: Setup git
         run: |
           git config --global user.name "github-actions[bot]"
