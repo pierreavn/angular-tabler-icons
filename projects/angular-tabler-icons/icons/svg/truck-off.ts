@@ -1,5 +1,4 @@
 export const IconTruckOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/truck-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <circle cx="7" cy="17" r="2" />
   <path d="M15.585 15.586a2 2 0 0 0 2.826 2.831" />

@@ -1,5 +1,4 @@
 export const IconWallpaperOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/wallpaper-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M10 6h8a2 2 0 0 1 2 2v8m-.58 3.409a1.994 1.994 0 0 1 -1.42 .591h-12" />
   <circle cx="6" cy="18" r="2" />

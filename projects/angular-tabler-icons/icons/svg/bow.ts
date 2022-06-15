@@ -1,5 +1,4 @@
 export const IconBow = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/bow</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M17 3h4v4" />
   <path d="M21 3l-15 15" />

@@ -1,5 +1,4 @@
 export const IconPhysotherapist = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/physotherapist</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M9 15l-1 -3l4 -2l4 1h3.5" />
   <circle cx="4" cy="19" r="1" />

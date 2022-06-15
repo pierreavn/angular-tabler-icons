@@ -1,5 +1,4 @@
 export const IconPackgeExport = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/packge-export</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M12 21l-8 -4.5v-9l8 -4.5l8 4.5v4.5" />
   <path d="M12 12l8 -4.5" />

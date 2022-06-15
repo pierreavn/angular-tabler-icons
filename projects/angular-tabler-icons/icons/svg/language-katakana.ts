@@ -1,5 +1,4 @@
 export const IconLanguageKatakana = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/language-katakana</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M5 5h6.586a1 1 0 0 1 .707 1.707l-1.293 1.293" />
   <path d="M8 8c0 1.5 .5 3 -2 5" />

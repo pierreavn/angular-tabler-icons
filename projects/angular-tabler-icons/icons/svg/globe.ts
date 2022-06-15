@@ -1,5 +1,4 @@
 export const IconGlobe = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/globe</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <circle cx="12" cy="10" r="4" />
   <path d="M6.75 16a8.015 8.015 0 1 0 9.25 -13" />

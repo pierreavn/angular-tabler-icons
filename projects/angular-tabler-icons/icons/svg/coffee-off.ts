@@ -1,5 +1,4 @@
 export const IconCoffeeOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/coffee-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.73 -.565 1.783 -.923 2.994 -.99" />
   <path d="M8 3c-.194 .14 -.364 .305 -.506 .49" />

@@ -1,5 +1,4 @@
 export const IconBrandPhp = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/brand-php</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
     <ellipse cx="12" cy="12" rx="10" ry="9" />
   <path d="M5.5 15l.395 -1.974l.605 -3.026h1.32a1 1 0 0 1 .986 1.164l-.167 1a1 1 0 0 1 -.986 .836h-1.653" />

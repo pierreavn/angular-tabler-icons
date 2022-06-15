@@ -1,5 +1,4 @@
 export const IconLamp2 = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/lamp-2</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M5 21h9" />
   <path d="M10 21l-7 -8l8.5 -5.5" />

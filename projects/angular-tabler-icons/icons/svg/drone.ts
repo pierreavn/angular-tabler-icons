@@ -1,5 +1,4 @@
 export const IconDrone = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/drone</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M10 10h4v4h-4z" />
   <line x1="10" y1="10" x2="6.5" y2="6.5" />

@@ -1,5 +1,4 @@
 export const IconDashboard = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/dashboard</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <circle cx="12" cy="13" r="2" />
   <line x1="13.45" y1="11.55" x2="15.5" y2="9.5" />

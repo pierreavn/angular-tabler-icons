@@ -1,5 +1,4 @@
 export const IconAsset = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/asset</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <circle cx="9" cy="15" r="6" />
   <circle cx="9" cy="15" r="2" />

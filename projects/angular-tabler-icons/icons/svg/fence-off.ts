@@ -1,5 +1,4 @@
 export const IconFenceOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/fence-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M12 12h-8v4h12m4 0v-4h-4" />
   <path d="M6 16v4h4v-4" />

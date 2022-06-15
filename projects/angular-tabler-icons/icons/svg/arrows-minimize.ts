@@ -1,5 +1,4 @@
 export const IconArrowsMinimize = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/arrows-minimize</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <polyline points="5 9 9 9 9 5" />
   <line x1="3" y1="3" x2="9" y2="9" />

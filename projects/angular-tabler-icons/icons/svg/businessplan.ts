@@ -1,5 +1,4 @@
 export const IconBusinessplan = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/businessplan</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
     <ellipse cx="16" cy="6" rx="5" ry="3" />
   <path d="M11 6v4c0 1.657 2.239 3 5 3s5 -1.343 5 -3v-4" />

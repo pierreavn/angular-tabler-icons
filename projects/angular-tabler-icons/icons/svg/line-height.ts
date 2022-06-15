@@ -1,5 +1,4 @@
 export const IconLineHeight = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/line-height</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <polyline points="3 8 6 5 9 8" />
   <polyline points="3 16 6 19 9 16" />

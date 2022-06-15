@@ -1,5 +1,4 @@
 export const IconBeachOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <desc>Download more icon variants from https://tabler-icons.io/i/beach-off</desc>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M15.071 15.102a7.502 7.502 0 0 0 -8.124 1.648" />
   <path d="M10.27 6.269l9.926 5.731a6 6 0 0 0 -10.32 -6.123" />
