@@ -1,0 +1,9 @@
+export const IconDeviceMobileCharging = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="6" y="3" width="12" height="18" rx="2" />
+  <path d="M11 4h2" />
+  <path d="M12 9.5l-1 2.5h2l-1 2.5" />
+</svg>
+
+
+`
