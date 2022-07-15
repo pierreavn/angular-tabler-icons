@@ -1,0 +1,9 @@
+export const IconExplicit = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="4" y="4" width="16" height="16" rx="1" />
+  <path d="M14 8h-4v8h4" />
+  <path d="M14 12h-4" />
+</svg>
+
+
+`
