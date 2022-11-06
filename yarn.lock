@@ -1478,10 +1478,10 @@
     "@angular-devkit/schematics" "13.3.7"
     jsonc-parser "3.0.0"
 
-"@tabler/icons@1.109.0":
-  version "1.109.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.109.0.tgz#11626c3fc097f2f70c4c197e4b9909fb05380752"
-  integrity sha512-B0YetE4pB6HY2Wa57v/LJ3NgkJzKYPze4U0DurIqPoKSptatKv2ga76FZSkO6EUpkYfHMtGPM6QjpJljfuCmAQ==
+"@tabler/icons@1.110.0":
+  version "1.110.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.110.0.tgz#0f1d9ba86191964fb316a393c3ae4fc5e01eb6f0"
+  integrity sha512-F7PGsboF35YRnSSMpAdco0VTBi0XkFzTHaaCX/jvwZChyZKeohJ99xALlS+zn23/SIUlWCrVvezpDzoqMhT/vA==
 
 "@tootallnate/once@1":
   version "1.1.2"
