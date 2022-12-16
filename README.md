@@ -153,6 +153,15 @@ import * as TablerIcons from 'angular-tabler-icons/icons';
 export class IconsModule { }
 ```
 
+## Angular version compatibility
+| Angular | angular-tabler-icons |
+|---------|----------------------|
+| 15      | 1.117.1+             |
+| 14      | 1.72.1+              |
+| 13      | 1.53.1+              |
+| 12      | 1.41.3+              |
+| 11      | 1.41.0+              |
+
 ## Contributing
 
 Feel free to report issues or to contibute to this project!  
@@ -164,7 +173,7 @@ $ yarn lib:build  # build angular library
 
 ## How to rebuild for newer tabler icons version
 
-1. Run GitHub actions workflow `Automatic PR on Tabler Icons Release`, with new Tabler Icons version (e.g. `1.65.0`). This workflow will create automatically a new Pull Request.
+1. Run GitHub actions workflow `Automatic PR on Tabler Icons Release`, with new Tabler Icons version (e.g. `1.117.0`). This workflow will create automatically a new Pull Request.
 2. Approve and Merge the generated Pull Request.
 3. Create a release/tag with the new Tabler Icons version.
   
