@@ -1,9 +1,6 @@
 export const IconArrowBarToDown = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <line x1="4" y1="20" x2="20" y2="20" />
-  <line x1="12" y1="14" x2="12" y2="4" />
-  <line x1="12" y1="14" x2="16" y2="10" />
-  <line x1="12" y1="14" x2="8" y2="10" />
+  <path d="M4 20l16 0m-8 -6l0 -10m0 10l4 -4m-4 4l-4 -4" />
 </svg>
 
 

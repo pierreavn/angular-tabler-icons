@@ -1,8 +1,6 @@
 export const IconOutlet = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <rect x="4" y="4" width="16" height="16" rx="2" />
-  <circle cx="9" cy="12" r=".5" fill="currentColor" />
-  <circle cx="15" cy="12" r=".5" fill="currentColor" />
+  <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2zm5 6m-.5 0a0.5 .5 0 1 0 1 0a0.5 .5 0 1 0 -1 0m6.5 0m-.5 0a0.5 .5 0 1 0 1 0a0.5 .5 0 1 0 -1 0" />
 </svg>
 
 

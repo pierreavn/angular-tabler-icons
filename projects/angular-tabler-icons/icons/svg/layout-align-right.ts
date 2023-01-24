@@ -1,7 +1,6 @@
 export const IconLayoutAlignRight = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <line x1="20" y1="4" x2="20" y2="20" />
-  <rect x="4" y="9" width="12" height="6" rx="2" />
+  <path d="M20 4l0 16m-16 -11m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
 </svg>
 
 

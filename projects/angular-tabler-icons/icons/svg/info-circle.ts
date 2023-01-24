@@ -1,8 +1,6 @@
 export const IconInfoCircle = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <circle cx="12" cy="12" r="9" />
-  <line x1="12" y1="8" x2="12.01" y2="8" />
-  <polyline points="11 12 12 12 12 16 13 16" />
+  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0m9 -4l.01 0m-1.01 4l1 0l0 4l1 0" />
 </svg>
 
 

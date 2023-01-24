@@ -1,13 +1,6 @@
 export const IconShape = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <circle cx="5" cy="5" r="2" />
-  <circle cx="19" cy="5" r="2" />
-  <circle cx="5" cy="19" r="2" />
-  <circle cx="19" cy="19" r="2" />
-  <line x1="5" y1="7" x2="5" y2="17" />
-  <line x1="7" y1="5" x2="17" y2="5" />
-  <line x1="7" y1="19" x2="17" y2="19" />
-  <line x1="19" y1="7" x2="19" y2="17" />
+  <path d="M5 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0m16 0m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0m-12 14m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0m16 0m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0m-12 -12l0 10m2 -12l10 0m-10 14l10 0m2 -12l0 10" />
 </svg>
 
 

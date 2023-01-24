@@ -1,8 +1,6 @@
 export const IconBrandNextcloud = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <circle cx="12" cy="12" r="5" />
-  <circle cx="4.5" cy="12.5" r="2.5" />
-  <circle cx="19.5" cy="12.5" r="2.5" />
+  <path d="M12 12m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0m-2.5 .5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0m17.5 0m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" />
 </svg>
 
 

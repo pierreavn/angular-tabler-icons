@@ -1,8 +1,6 @@
 export const IconArrowsVertical = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <polyline points="8 7 12 3 16 7" />
-  <polyline points="8 17 12 21 16 17" />
-  <line x1="12" y1="3" x2="12" y2="21" />
+  <path d="M8 7l4 -4l4 4m-8 10l4 4l4 -4m-4 -14l0 18" />
 </svg>
 
 

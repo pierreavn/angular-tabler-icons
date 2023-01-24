@@ -1,8 +1,6 @@
 export const IconDivide = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <circle cx="12" cy="6" r="1" fill="currentColor" />
-  <circle cx="12" cy="18" r="1" fill="currentColor" />
-  <line x1="5" y1="12" x2="19" y2="12" />
+  <path d="M12 6m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0m1 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0m-6 -6l14 0" />
 </svg>
 
 
