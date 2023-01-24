@@ -1,8 +1,6 @@
 export const IconBrowser = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <rect x="4" y="4" width="16" height="16" rx="1" />
-  <line x1="4" y1="8" x2="20" y2="8" />
-  <line x1="8" y1="4" x2="8" y2="8" />
+  <path d="M4 4m0 1a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1zm0 3l16 0m-12 -4l0 4" />
 </svg>
 
 

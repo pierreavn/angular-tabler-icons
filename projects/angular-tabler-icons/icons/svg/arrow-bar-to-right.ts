@@ -1,9 +1,6 @@
 export const IconArrowBarToRight = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <line x1="14" y1="12" x2="4" y2="12" />
-  <line x1="14" y1="12" x2="10" y2="16" />
-  <line x1="14" y1="12" x2="10" y2="8" />
-  <line x1="20" y1="4" x2="20" y2="20" />
+  <path d="M14 12l-10 0m10 0l-4 4m4 -4l-4 -4m10 -4l0 16" />
 </svg>
 
 

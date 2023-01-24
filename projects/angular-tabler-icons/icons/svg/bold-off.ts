@@ -1,8 +1,6 @@
 export const IconBoldOff = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M9 5h4a3.5 3.5 0 0 1 2.222 6.204m-3.222 .796h-5v-5" />
-  <path d="M17.107 17.112a3.5 3.5 0 0 1 -3.107 1.888h-7v-7" />
-  <path d="M3 3l18 18" />
+  <path d="M9 5h4a3.5 3.5 0 0 1 2.222 6.204m-3.222 .796h-5v-5m10.107 10.112a3.5 3.5 0 0 1 -3.107 1.888h-7v-7m-4 -9l18 18" />
 </svg>
 
 

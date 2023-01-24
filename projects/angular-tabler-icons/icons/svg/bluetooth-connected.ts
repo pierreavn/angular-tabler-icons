@@ -1,8 +1,6 @@
 export const IconBluetoothConnected = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <polyline points="7 8 17 16 12 20 12 4 17 8 7 16" />
-  <line x1="4" y1="12" x2="5" y2="12" />
-  <line x1="18" y1="12" x2="19" y2="12" />
+  <path d="M7 8l10 8l-5 4l0 -16l5 4l-10 8m-3 -4l1 0m13 0l1 0" />
 </svg>
 
 

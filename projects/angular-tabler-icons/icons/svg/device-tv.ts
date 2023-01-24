@@ -1,7 +1,6 @@
 export const IconDeviceTv = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <rect x="3" y="7" width="18" height="13" rx="2" />
-  <polyline points="16 3 12 7 8 3" />
+  <path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2zm13 -6l-4 4l-4 -4" />
 </svg>
 
 

@@ -1,9 +1,6 @@
 export const IconArrowDownCircle = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <circle cx="12" cy="12" r="9" />
-  <line x1="8" y1="12" x2="12" y2="16" />
-  <line x1="12" y1="8" x2="12" y2="16" />
-  <line x1="16" y1="12" x2="12" y2="16" />
+  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0m5 0l4 4m0 -8l0 8m4 -4l-4 4" />
 </svg>
 
 

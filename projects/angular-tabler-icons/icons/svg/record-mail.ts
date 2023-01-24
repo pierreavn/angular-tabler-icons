@@ -1,8 +1,6 @@
 export const IconRecordMail = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <circle cx="7" cy="12" r="3" />
-  <circle cx="17" cy="12" r="3" />
-  <line x1="7" y1="15" x2="17" y2="15" />
+  <path d="M7 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0m13 0m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0m-7 3l10 0" />
 </svg>
 
 
