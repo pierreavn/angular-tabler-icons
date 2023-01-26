@@ -1,6 +1,9 @@
 export const IconCurrencyLari = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M18 13a6 6 0 1 0 -6 6m-6 0h12m-8 -14v7m4 0v-7" />
+  <path d="M18 13a6 6 0 1 0 -6 6" />
+  <path d="M6 19h12" />
+  <path d="M10 5v7" />
+  <path d="M14 12v-7" />
 </svg>
 
 

@@ -1,6 +1,8 @@
 export const IconZodiacAries = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M12 5a5 5 0 1 0 -4 8m8 0a5 5 0 1 0 -4 -8m0 16l0 -16" />
+  <path d="M12 5a5 5 0 1 0 -4 8" />
+  <path d="M16 13a5 5 0 1 0 -4 -8" />
+  <path d="M12 21l0 -16" />
 </svg>
 
 
