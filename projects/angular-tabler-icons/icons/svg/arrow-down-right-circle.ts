@@ -1,8 +1,8 @@
 export const IconArrowDownRightCircle = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-  <path d="M15 15l-6 0" />
-  <path d="M15 9l0 6l-6 -6" />
+  <path d="M8.464 8.464l9.536 9.536" />
+  <path d="M14 18h4v-4" />
+  <path d="M8.414 8.414a2 2 0 1 0 -2.828 -2.828a2 2 0 0 0 2.828 2.828" />
 </svg>
 
 
