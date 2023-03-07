@@ -1,6 +1,6 @@
 export const IconMoodDollar = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M21 12a9.003 9.003 0 0 0 -4.5 -7.794a9 9 0 1 0 -3.506 16.739" />
+  <path d="M20.87 10.48a9 9 0 1 0 -7.876 10.465" />
   <path d="M9 10h.01" />
   <path d="M15 10h.01" />
   <path d="M9.5 15c.658 .64 1.56 1 2.5 1c.357 0 .709 -.052 1.043 -.151" />
