@@ -38,7 +38,8 @@ export class TablerIconsModule {
           useValue: {
             icons,
             ...options
-          }
+          },
+          multi: true
         }
       ]
     };
