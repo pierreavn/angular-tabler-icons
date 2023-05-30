@@ -23,6 +23,10 @@
       "angular-tabler-icons": [
         "dist/angular-tabler-icons/angular-tabler-icons",
         "dist/angular-tabler-icons"
+      ],
+      "angular-tabler-icons/*": [
+        "dist/angular-tabler-icons/angular-tabler-icons/*",
+        "dist/angular-tabler-icons/*"
       ]
     }
   },
