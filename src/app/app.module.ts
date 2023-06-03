@@ -4,6 +4,7 @@ import { AppComponent } from "./app.component";
 
 import { TablerIconsModule } from 'angular-tabler-icons';
 import { IconCamera, IconHeart, IconBrandGithub } from 'angular-tabler-icons/icons';
+import { StandaloneComponent } from './standalone/standalone.component';
 
 const icons = {
   IconCamera,
@@ -14,6 +15,7 @@ const icons = {
 @NgModule({
   declarations: [AppComponent],
   imports: [
+    StandaloneComponent,
     BrowserModule,
     TablerIconsModule.pick(icons),
   ],

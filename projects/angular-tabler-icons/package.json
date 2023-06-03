@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/pierreavn/angular-tabler-icons",
   "peerDependencies": {
-    "@angular/common": "11 - 15",
-    "@angular/core": "11 - 15"
+    "@angular/common": "14 - 16",
+    "@angular/core": "14 - 16"
   },
   "dependencies": {
     "tslib": "^2.0.0"
