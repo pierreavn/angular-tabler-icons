@@ -156,6 +156,7 @@ export class IconsModule { }
 ## Angular version compatibility
 | Angular | angular-tabler-icons |
 |---------|----------------------|
+| 16      | 2.21.1+              |
 | 15      | 1.117.1+             |
 | 14      | 1.72.1+              |
 | 13      | 1.53.1+              |
