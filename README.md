@@ -64,7 +64,42 @@ export class IconsModule { }
 // 2. Don't forget to pick some icons using TablerIconsModule.pick({ ... })
 ```
 
-_4. Use it in template_
+_4. Import IconsModule_
+
+If you are using NgModules, import it this way:
+```ts
+import { NgModule } from "@angular/core";
+import { MyComponent } from './my/my.component';
+import { IconsModule } from "./icons.module";
+
+@NgModule({
+  declarations: [MyComponent],
+  imports: [
+    IconsModule, // <--- Here
+  ],
+})
+export class MyModule {}
+```
+
+If you are using Standalone Components, import it this way:
+```ts
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
+import { IconsModule } from './icons.module';
+
+@Component({
+  selector: 'app-my',
+  standalone: true,
+  imports: [CommonModule, RouterOutlet, IconsModule], // <--- Here
+  templateUrl: './my.component.html',
+  styleUrls: ['./my.component.scss']
+})
+export class MyComponent {}
+```
+
+
+_5. Use it in template_
 
 After importing the _IconsModule_ in your feature or shared module, use the icons as follows:
 
@@ -121,9 +156,9 @@ import * as TablerIcons from 'angular-tabler-icons/icons';
   imports: [
     TablerIconsModule.pick(TablerIcons, {
 
-      // Ignore warnings, such as "Tabler Icon not found"
+      // Ignore warnings, such as "Tabler Icon not found", for example:
+      //   ignoreWarnings: environment.production,
       ignoreWarnings: true,
-      ignoreWarnings: environment.production,
 
     })
   ],
@@ -156,6 +191,7 @@ export class IconsModule { }
 ## Angular version compatibility
 | Angular | angular-tabler-icons |
 |---------|----------------------|
+| 17      | 2.40.1+              |
 | 16      | 2.21.1+              |
 | 15      | 1.117.1+             |
 | 14      | 1.72.1+              |
@@ -174,7 +210,7 @@ $ yarn lib:build  # build angular library
 
 ## How to rebuild for newer tabler icons version
 
-1. Run GitHub actions workflow `Automatic PR on Tabler Icons Release`, with new Tabler Icons version (e.g. `1.117.0`). This workflow will create automatically a new Pull Request.
+1. Run GitHub actions workflow `Automatic PR on Tabler Icons Release`, with new Tabler Icons version (e.g. `2.40.0`). This workflow will create automatically a new Pull Request.
 2. Approve and Merge the generated Pull Request.
 3. Create a release/tag with the new Tabler Icons version.
   

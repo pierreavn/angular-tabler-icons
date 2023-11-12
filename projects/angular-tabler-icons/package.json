@@ -1,6 +1,6 @@
 {
   "name": "angular-tabler-icons",
-  "version": "2.40.0",
+  "version": "2.40.1",
   "description": "Tabler Icons components library for your Angular applications",
   "repository": {
     "type": "git",
@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/pierreavn/angular-tabler-icons",
   "peerDependencies": {
-    "@angular/common": "14 - 16",
-    "@angular/core": "14 - 16"
+    "@angular/common": "14 - 17",
+    "@angular/core": "14 - 17"
   },
   "dependencies": {
     "tslib": "^2.0.0"
