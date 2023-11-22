@@ -1761,10 +1761,10 @@
     "@angular-devkit/schematics" "14.2.11"
     jsonc-parser "3.1.0"
 
-"@tabler/icons@2.40.0":
-  version "2.40.0"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-2.40.0.tgz#96cecc990a03412b88194ce3765280d2e63c1be6"
-  integrity sha512-VqKsBSX159cLFTnCzkCmGhZtSPJHNN0lM2sC4xe0HPOfPUnjiex7rDHDdut4oe4iKRecDDpwXwM9BcU6xCPlCg==
+"@tabler/icons@2.41.0":
+  version "2.41.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-2.41.0.tgz#cbd878dadfa3e6ceb188b4a10346e6b2ba7f0fd0"
+  integrity sha512-n7a4Qx/Narn4thV/FxnWb0GoOSGdFTA5ZRLuvgshXn3YxwP0Z7KLzgQ5tQs1gpwdNF5f+HI3dhVTfv/ZG6Zahw==
 
 "@tootallnate/once@2":
   version "2.0.0"
