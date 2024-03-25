@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TablerIconsModule, TablerIconsProvider } from 'angular-tabler-icons';
-import { Icon123, IconAdOff } from 'angular-tabler-icons/icons';
+import { IconNumber123, IconAdOff, IconHeartFilled } from 'angular-tabler-icons/icons';
 
 
 @Component({
@@ -12,8 +12,9 @@ import { Icon123, IconAdOff } from 'angular-tabler-icons/icons';
   ],
   providers: [
     TablerIconsProvider.pick({
-      Icon123,
-      IconAdOff
+      IconNumber123,
+      IconAdOff,
+      IconHeartFilled
     })
   ]
 })

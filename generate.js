@@ -6,7 +6,10 @@ const NG_PROJECT = 'projects/angular-tabler-icons';
 const PATHS = {
 
   // Path to Tabler SVG icons
-  ICONS_SRC: 'node_modules/@tabler/icons/icons',
+  ICONS: [
+    { src: 'node_modules/@tabler/icons/icons/outline', attribute: '' },
+    { src: 'node_modules/@tabler/icons/icons/filled', attribute: 'fill="currentColor" stroke="currentColor"', suffix: '-filled' },
+  ],
 
   // Path to Angular lib project
   ICONS_DEST: `${NG_PROJECT}/icons/svg`,
@@ -41,26 +44,27 @@ async function generate() {
   await fs.mkdir(PATHS.ICONS_DEST);
 
   // Generate each icon file
-  const sourceIconFiles = await fs.readdir(PATHS.ICONS_SRC);
-  let i = 0;
-  for (const filename of sourceIconFiles) {
-    if (filename === ".DS_Store") {
-      continue;
+  for (const icons of PATHS.ICONS) {
+    const sourceIconFiles = await fs.readdir(icons.src);
+    for (const filename of sourceIconFiles) {
+      if (!filename.endsWith('.svg')) {
+        continue;
+      }
+  
+      const iconNameHyphens = stripExtension(filename) + (icons.suffix ?? '');
+      const iconNameCamel = uppercamelcase('icon-' + iconNameHyphens);
+  
+      const svgRaw = await fs.readFile(`${icons.src}/${filename}`, 'utf-8');
+      const svg = svgRaw.replaceAll('\n', '').replace(/<svg [^>]*>/, `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ${icons.attribute}>`);
+      const component = `export const ${iconNameCamel} = \`${svg}\``;
+  
+      await fs.writeFile(`${PATHS.ICONS_DEST}/${iconNameHyphens}.ts`, component, 'utf-8');
+  
+      await fs.appendFile(
+        PATHS.INDEX_FILE,
+        `export { ${iconNameCamel} } from './svg/${iconNameHyphens}';\n`
+      );
     }
-
-    const iconNameHyphens = stripExtension(filename);
-    const iconNameCamel = uppercamelcase('icon-' + iconNameHyphens);
-
-    const svgRaw = await fs.readFile(`${PATHS.ICONS_SRC}/${filename}`, 'utf-8');
-    const svg = svgRaw.replace(/<svg .*>/, `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">`);
-    const component = `export const ${iconNameCamel} = \`${svg}\``;
-
-    await fs.writeFile(`${PATHS.ICONS_DEST}/${iconNameHyphens}.ts`, component, 'utf-8');
-
-    await fs.appendFile(
-      PATHS.INDEX_FILE,
-      `export { ${iconNameCamel} } from './svg/${iconNameHyphens}';\n`
-    );
   }
 
   console.log('Done!');
