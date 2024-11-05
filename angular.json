@@ -48,16 +48,12 @@
             "outputPath": "dist/sample-app",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": "[zone.js]",
             "tsConfig": "tsconfig.json",
             "aot": true,
             "buildOptimizer": false,
-            "assets": [
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": [],
             "vendorChunk": true,
             "extractLicenses": false,
