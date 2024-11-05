@@ -12,21 +12,25 @@
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/angular-tabler-icons/tsconfig.lib.json",
             "project": "projects/angular-tabler-icons/ng-package.json"
           },
           "configurations": {
             "production": {
               "tsConfig": "projects/angular-tabler-icons/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/angular-tabler-icons/tsconfig.lib.json"
             }
-          }
+          },
+          "defaultConfiguration": "production"
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "projects/angular-tabler-icons/src/test.ts",
             "tsConfig": "projects/angular-tabler-icons/tsconfig.spec.json",
-            "karmaConfig": "projects/angular-tabler-icons/karma.conf.js"
+            "karmaConfig": "projects/angular-tabler-icons/karma.conf.js",
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }
@@ -48,28 +52,51 @@
             "outputPath": "dist/sample-app",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": "[zone.js]",
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.json",
-            "aot": true,
-            "buildOptimizer": false,
+            "inlineStyleLanguage": "scss",
             "assets": ["src/assets"],
             "styles": ["src/styles.scss"],
-            "scripts": [],
-            "vendorChunk": true,
-            "extractLicenses": false,
-            "sourceMap": true,
-            "optimization": false,
-            "namedChunks": true
+            "scripts": []
           },
-          "configurations": {},
-          "defaultConfiguration": ""
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "buildTarget": "sample-app:build"
+          "configurations": {
+            "production": {
+              "buildTarget": "sample-app:build:production"
+            },
+            "development": {
+              "buildTarget": "sample-app:build:development"
+            }
           },
-          "configurations": {}
+          "defaultConfiguration": "development"
         }
       }
     }
