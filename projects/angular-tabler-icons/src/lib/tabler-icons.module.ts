@@ -4,7 +4,7 @@ import { OPTIONS_TOKEN } from './options.provider';
 import { OptionIcons, Options } from './options.interfaces';
 
 @NgModule({
-  declarations: [TablerIconComponent],
+  imports: [TablerIconComponent],
   exports: [TablerIconComponent],
 })
 export class TablerIconsModule {

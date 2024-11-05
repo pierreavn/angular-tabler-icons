@@ -6,8 +6,8 @@
 
 ## Description
 
-This package allows you to use the [Tabler Icons](https://tabler.io/icons) in your angular applications. Tabler Icons is a set of free MIT-licensed high-quality SVG icons for you to use in your web projects. Each icon is designed on a 24x24 grid and a 2px stroke.  
-  
+This package allows you to use the [Tabler Icons](https://tabler.io/icons) in your angular applications. Tabler Icons is a set of free MIT-licensed high-quality SVG icons for you to use in your web projects. Each icon is designed on a 24x24 grid and a 2px stroke.
+
 Inspired by [angular-feather](https://github.com/michaelbazos/angular-feather), thank you to the author.
 
 ## Usage
@@ -21,12 +21,12 @@ yarn add angular-tabler-icons
 ```
 
 _2. Generate a module to host the icons you'll import_
- 
+
 ```sh
 ng generate module icons
 ```
-  
-_3. Import assets_ 
+
+_3. Import assets_
 
 You need to import:
  - TablerIconsModule, as it contains the `<i-tabler>` component
@@ -36,7 +36,7 @@ We put this in IconsModule for modularity. See example below:
 
 
 *file: icon.module.ts*
-```ts  
+```ts
 import { NgModule } from '@angular/core';
 
 import { TablerIconsModule } from 'angular-tabler-icons';
@@ -112,8 +112,8 @@ After importing the _IconsModule_ in your feature or shared module, use the icon
 
 ## Available icons
 
-List of available icons: https://tabler.io/icons 
-  
+List of available icons: https://tabler.io/icons
+
 This version includes **Tabler Icons v3.1.0**, see [changelog](https://tabler.io/icons/changelog) to know which icons are available.
 
 
@@ -202,7 +202,7 @@ export class IconsModule { }
 
 ## Contributing
 
-Feel free to report issues or to contibute to this project!  
+Feel free to report issues or to contribute to this project!
 Here are few tips to start:
 ```bash
 $ yarn lib:generate  # generate components from Tabler Icons
@@ -214,5 +214,5 @@ $ yarn lib:build  # build angular library
 1. Run GitHub actions workflow `Automatic PR on Tabler Icons Release`, with new Tabler Icons version (e.g. `2.40.0`). This workflow will create automatically a new Pull Request.
 2. Approve and Merge the generated Pull Request.
 3. Create a release/tag with the new Tabler Icons version.
-  
+
 Package is automatically rebuilt and published, with the GitHub actions workflow `Build and Publish package`.

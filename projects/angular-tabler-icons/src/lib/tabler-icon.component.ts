@@ -6,23 +6,23 @@ import {
   OnChanges,
   SimpleChanges,
   inject,
-  Inject,
+  ChangeDetectionStrategy,
 } from '@angular/core';
-import { OptionsProvider, OPTIONS_TOKEN } from './options.provider';
+import { OPTIONS_TOKEN } from './options.provider';
 import { uppercamelcase } from './utils';
-import { Options } from 'del';
 
 @Component({
   // tslint:disable-next-line:component-selector
   selector: 'i-tabler, tabler-icon',
+  standalone: true,
   templateUrl: './tabler-icon.component.html',
   styleUrls: ['./tabler-icon.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TablerIconComponent implements OnChanges {
   private elem = inject<ElementRef>(ElementRef);
   private changeDetector = inject<ChangeDetectorRef>(ChangeDetectorRef);
   private options = inject(OPTIONS_TOKEN);
-
 
   @Input() name!: string;
 

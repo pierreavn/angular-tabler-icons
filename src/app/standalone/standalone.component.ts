@@ -1,22 +1,22 @@
 import { Component } from '@angular/core';
-import { TablerIconsModule, TablerIconsProvider } from 'angular-tabler-icons';
-import { IconNumber123, IconAdOff, IconHeartFilled } from 'angular-tabler-icons/icons';
-
+import { TablerIconComponent, provideTablerIcons } from 'angular-tabler-icons';
+import {
+  IconNumber123,
+  IconAdOff,
+  IconHeartFilled,
+} from 'angular-tabler-icons/icons';
 
 @Component({
   selector: 'app-standalone',
   templateUrl: './standalone.component.html',
   standalone: true,
-  imports: [
-    TablerIconsModule,
-  ],
+  imports: [TablerIconComponent],
   providers: [
-    TablerIconsProvider.pick({
+    provideTablerIcons({
       IconNumber123,
       IconAdOff,
-      IconHeartFilled
-    })
-  ]
+      IconHeartFilled,
+    }),
+  ],
 })
-export class StandaloneComponent {
-}
+export class StandaloneComponent {}
