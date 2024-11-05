@@ -1,6 +1,6 @@
 import { NgModule, ModuleWithProviders, inject } from '@angular/core';
 import { TablerIconComponent } from './tabler-icon.component';
-import { OptionsProvider } from './options.provider';
+import { OPTIONS_TOKEN } from './options.provider';
 import { OptionIcons, Options } from './options.interfaces';
 
 @NgModule({
@@ -8,7 +8,7 @@ import { OptionIcons, Options } from './options.interfaces';
   exports: [TablerIconComponent],
 })
 export class TablerIconsModule {
-  private options = inject(OptionsProvider, { optional: true });
+  private options = inject(OPTIONS_TOKEN, { optional: true });
 
   constructor() {
     if (!this.options) {
@@ -32,7 +32,7 @@ export class TablerIconsModule {
       ngModule: TablerIconsModule,
       providers: [
         {
-          provide: OptionsProvider,
+          provide: OPTIONS_TOKEN,
           useValue: {
             icons,
             ...options,

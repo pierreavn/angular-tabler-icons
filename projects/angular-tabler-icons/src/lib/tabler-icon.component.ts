@@ -6,9 +6,11 @@ import {
   OnChanges,
   SimpleChanges,
   inject,
+  Inject,
 } from '@angular/core';
-import { OptionsProvider } from './options.provider';
+import { OptionsProvider, OPTIONS_TOKEN } from './options.provider';
 import { uppercamelcase } from './utils';
+import { Options } from 'del';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -19,7 +21,8 @@ import { uppercamelcase } from './utils';
 export class TablerIconComponent implements OnChanges {
   private elem = inject<ElementRef>(ElementRef);
   private changeDetector = inject<ChangeDetectorRef>(ChangeDetectorRef);
-  private options = inject(OptionsProvider);
+  private options = inject(OPTIONS_TOKEN);
+
 
   @Input() name!: string;
 
