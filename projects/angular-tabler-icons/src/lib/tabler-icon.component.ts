@@ -12,7 +12,7 @@ import { OPTIONS_TOKEN } from './options.provider';
 import { uppercamelcase } from './utils';
 
 @Component({
-  // tslint:disable-next-line:component-selector
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'i-tabler, tabler-icon',
   standalone: true,
   templateUrl: './tabler-icon.component.html',

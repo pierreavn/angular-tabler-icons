@@ -30,7 +30,20 @@
             "main": "projects/angular-tabler-icons/src/test.ts",
             "tsConfig": "projects/angular-tabler-icons/tsconfig.spec.json",
             "karmaConfig": "projects/angular-tabler-icons/karma.conf.js",
-            "polyfills": ["zone.js", "zone.js/testing"]
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/angular-tabler-icons/**/*.ts",
+              "projects/angular-tabler-icons/**/*.html"
+            ],
+            "eslintConfig": "projects/angular-tabler-icons/eslint.config.js"
           }
         }
       }
@@ -53,11 +66,17 @@
               "base": "dist/sample-app"
             },
             "index": "src/index.html",
-            "polyfills": ["zone.js"],
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "tsconfig.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/assets"],
-            "styles": ["src/styles.scss"],
+            "assets": [
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
             "scripts": [],
             "browser": "src/main.ts"
           },
@@ -97,6 +116,15 @@
             }
           },
           "defaultConfiguration": "development"
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
