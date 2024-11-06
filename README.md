@@ -10,7 +10,7 @@ This package allows you to use the [Tabler Icons](https://tabler.io/icons) in yo
 
 Inspired by [angular-feather](https://github.com/michaelbazos/angular-feather), thank you to the author.
 
-## Usage
+## Install
 
 _1. Install the package_
 
@@ -20,56 +20,117 @@ npm install angular-tabler-icons
 yarn add angular-tabler-icons
 ```
 
-_2. Generate a module to host the icons you'll import_
+## Usage
+
+### Standalone
+
+If you are using Standalone Components, use the `provideTablerIcons()`
+
+#### Component
+
+```ts
+import { Component } from '@angular/core';
+import { TablerIconComponent, provideTablerIcons } from 'angular-tabler-icons';
+import {
+  IconNumber123,
+  IconAdOff,
+  IconHeartFilled,
+} from 'angular-tabler-icons/icons';
+
+@Component({
+  selector: 'app-standalone',
+  standalone: true,
+  imports: [TablerIconComponent],
+  /**
+   * Provide the icons which you want to use in this component.
+   */
+  providers: [
+    provideTablerIcons({
+      IconNumber123,
+      IconAdOff,
+      IconHeartFilled,
+    }),
+  ],
+,
+})
+export class StandaloneComponent {}
+
+```
+
+#### HTML
+
+```html
+<fieldset>
+  <legend>123</legend>
+  <i-tabler name="number-123"></i-tabler>
+</fieldset>
+
+<fieldset>
+  <legend>123 (style, big)</legend>
+  <i-tabler name="number-123" style="height: 60px; width: 60px;"></i-tabler>
+</fieldset>
+
+<fieldset>
+  <legend>ad-off (style, red)</legend>
+  <i-tabler name="ad-off" style="color: red;"></i-tabler>
+</fieldset>
+
+<fieldset>
+  <legend>heart-filled (style, red)</legend>
+  <i-tabler name="heart-filled" style="color: red;"></i-tabler>
+</fieldset>
+```
+
+### NgModule (Legacy)
+
+_1. Generate a module to host the icons you'll import_
 
 ```sh
 ng generate module icons
 ```
 
-_3. Import assets_
+_2. Import assets_
 
 You need to import:
- - TablerIconsModule, as it contains the `<i-tabler>` component
- - The icons that you need
+
+- TablerIconsModule, as it contains the `<i-tabler>` component
+- The icons that you need
 
 We put this in IconsModule for modularity. See example below:
 
+_file: icon.module.ts_
 
-*file: icon.module.ts*
 ```ts
-import { NgModule } from '@angular/core';
+import { NgModule } from "@angular/core";
 
-import { TablerIconsModule } from 'angular-tabler-icons';
-import { IconCamera, IconHeart, IconBrandGithub } from 'angular-tabler-icons/icons';
+import { TablerIconsModule } from "angular-tabler-icons";
+import { IconCamera, IconHeart, IconBrandGithub } from "angular-tabler-icons/icons";
 
 // Select some icons (use an object, not an array)
 const icons = {
   IconCamera,
   IconHeart,
-  IconBrandGithub
+  IconBrandGithub,
 };
 
 @NgModule({
-  imports: [
-    TablerIconsModule.pick(icons)
-  ],
-  exports: [
-    TablerIconsModule
-  ]
+  imports: [TablerIconsModule.pick(icons)],
+  exports: [TablerIconsModule],
 })
-export class IconsModule { }
+export class IconsModule {}
 
 // NOTES:
 // 1. We add TablerIconsModule to the 'exports', since the <i-tabler> component will be used in templates of parent module
 // 2. Don't forget to pick some icons using TablerIconsModule.pick({ ... })
 ```
 
-_4. Import IconsModule_
+_3. Import IconsModule_
 
 If you are using NgModules, import it this way:
+
 ```ts
 import { NgModule } from "@angular/core";
-import { MyComponent } from './my/my.component';
+import { MyComponent } from "./my/my.component";
 import { IconsModule } from "./icons.module";
 
 @NgModule({
@@ -81,25 +142,7 @@ import { IconsModule } from "./icons.module";
 export class MyModule {}
 ```
 
-If you are using Standalone Components, import it this way:
-```ts
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
-import { IconsModule } from './icons.module';
-
-@Component({
-  selector: 'app-my',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet, IconsModule], // <--- Here
-  templateUrl: './my.component.html',
-  styleUrls: ['./my.component.scss']
-})
-export class MyComponent {}
-```
-
-
-_5. Use it in template_
+_4. Use it in template_
 
 After importing the _IconsModule_ in your feature or shared module, use the icons as follows:
 
@@ -112,10 +155,9 @@ After importing the _IconsModule_ in your feature or shared module, use the icon
 
 ## Available icons
 
-List of available icons: https://tabler.io/icons
+List of available icons: <https://tabler.io/icons>
 
 This version includes **Tabler Icons v3.1.0**, see [changelog](https://tabler.io/icons/changelog) to know which icons are available.
-
 
 ## Styling icons
 
@@ -149,25 +191,21 @@ Each icon can be styled separately with CSS:
 Some options are available to configure the module:
 
 ```ts
-import { environment } from '../environments/environment';
-import { TablerIconsModule } from 'angular-tabler-icons';
-import * as TablerIcons from 'angular-tabler-icons/icons';
+import { environment } from "../environments/environment";
+import { TablerIconsModule } from "angular-tabler-icons";
+import * as TablerIcons from "angular-tabler-icons/icons";
 
 @NgModule({
   imports: [
     TablerIconsModule.pick(TablerIcons, {
-
       // Ignore warnings, such as "Tabler Icon not found", for example:
       //   ignoreWarnings: environment.production,
       ignoreWarnings: true,
-
-    })
+    }),
   ],
-  exports: [
-    TablerIconsModule
-  ]
+  exports: [TablerIconsModule],
 })
-export class IconsModule { }
+export class IconsModule {}
 ```
 
 ## Pick all icons
@@ -175,23 +213,21 @@ export class IconsModule { }
 You can import all icons at once by doing the following. However, keep in mind that by doing this, all icons will end up in your application bundle. While this may not be much of an issue for prototyping, **it is not recommended for any application that you plan to release**.
 
 ```ts
-import { TablerIconsModule } from 'angular-tabler-icons';
-import * as TablerIcons from 'angular-tabler-icons/icons';
+import { TablerIconsModule } from "angular-tabler-icons";
+import * as TablerIcons from "angular-tabler-icons/icons";
 
 @NgModule({
-  imports: [
-    TablerIconsModule.pick(TablerIcons)
-  ],
-  exports: [
-    TablerIconsModule
-  ]
+  imports: [TablerIconsModule.pick(TablerIcons)],
+  exports: [TablerIconsModule],
 })
-export class IconsModule { }
+export class IconsModule {}
 ```
 
 ## Angular version compatibility
+
 | Angular | angular-tabler-icons |
-|---------|----------------------|
+| ------- | -------------------- |
+| 18      | 3.10.0+              |
 | 17      | 2.40.1+              |
 | 16      | 2.21.1+              |
 | 15      | 1.117.1+             |
@@ -204,9 +240,10 @@ export class IconsModule { }
 
 Feel free to report issues or to contribute to this project!
 Here are few tips to start:
+
 ```bash
-$ yarn lib:generate  # generate components from Tabler Icons
-$ yarn lib:build  # build angular library
+yarn lib:generate  # generate components from Tabler Icons
+yarn lib:build  # build angular library
 ```
 
 ## How to rebuild for newer tabler icons version
