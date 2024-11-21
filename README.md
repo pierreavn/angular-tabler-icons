@@ -39,7 +39,6 @@ import {
 
 @Component({
   selector: 'app-standalone',
-  standalone: true,
   imports: [TablerIconComponent],
   /**
    * Provide the icons which you want to use in this component.

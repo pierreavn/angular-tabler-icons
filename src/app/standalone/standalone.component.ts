@@ -7,20 +7,19 @@ import {
 } from 'angular-tabler-icons/icons';
 
 @Component({
-  selector: 'app-standalone',
-  standalone: true,
-  imports: [TablerIconComponent],
-  providers: [
-    /**
-     * Provide the icons which you want to use in this component.
-     */
-    provideTablerIcons({
-      IconNumber123,
-      IconAdOff,
-      IconHeartFilled,
-    }),
-  ],
-  template: `
+    selector: 'app-standalone',
+    imports: [TablerIconComponent],
+    providers: [
+        /**
+         * Provide the icons which you want to use in this component.
+         */
+        provideTablerIcons({
+            IconNumber123,
+            IconAdOff,
+            IconHeartFilled,
+        }),
+    ],
+    template: `
     <h2>Standalone component sample</h2>
 
     <fieldset>
@@ -42,6 +41,6 @@ import {
       <legend>heart-filled (style, red)</legend>
       <i-tabler name="heart-filled" style="color: red;"></i-tabler>
     </fieldset>
-  `,
+  `
 })
 export class StandaloneComponent {}

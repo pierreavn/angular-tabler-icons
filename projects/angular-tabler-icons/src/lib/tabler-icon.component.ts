@@ -14,7 +14,6 @@ import { uppercamelcase } from './utils';
 @Component({
   // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'i-tabler, tabler-icon',
-  standalone: true,
   templateUrl: './tabler-icon.component.html',
   styleUrls: ['./tabler-icon.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
