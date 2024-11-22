@@ -3,6 +3,10 @@ import { TablerIconComponent } from './tabler-icon.component';
 import { OPTIONS_TOKEN } from './options.provider';
 import { OptionIcons, Options } from './options.interfaces';
 
+/**
+ * @deprecated
+ *
+ */
 @NgModule({
   imports: [TablerIconComponent],
   exports: [TablerIconComponent],
