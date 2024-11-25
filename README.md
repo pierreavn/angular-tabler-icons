@@ -8,7 +8,7 @@
 
 This package allows you to use the [Tabler Icons](https://tabler.io/icons) in your angular applications. Tabler Icons is a set of free MIT-licensed high-quality SVG icons for you to use in your web projects. Each icon is designed on a 24x24 grid and a 2px stroke.
 
-Inspired by [angular-feather](https://github.com/michaelbazos/angular-feather), thank you to the author.
+**✨ Many thanks to [Arjen](https://github.com/the-ult) and [janschab](https://github.com/janschab) for their contribution on this project!**
 
 ## Install
 
