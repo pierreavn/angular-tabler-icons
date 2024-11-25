@@ -80,6 +80,76 @@ export class StandaloneComponent {}
 </fieldset>
 ```
 
+## Available icons
+
+List of available icons: <https://tabler.io/icons>
+
+This version includes **Tabler Icons v3.22.0**, see [changelog](https://tabler.io/icons/changelog) to know which icons are available.
+
+## Styling icons
+
+Each icon can be styled separately with CSS:
+
+```html
+<i-tabler name="camera" class="big fill-red stroke-blue thin"></i-tabler>
+```
+
+```css
+.big {
+  height: 50px;
+  width: 50px;
+}
+
+.fill-red {
+  fill: red;
+}
+
+.stroke-blue {
+  color: blue;
+}
+
+.thin {
+  stroke-width: 1px;
+}
+```
+
+## Options
+
+Some options are available to configure the module:
+
+```ts
+import { environment } from "../environments/environment";
+import { TablerIconsModule } from "angular-tabler-icons";
+import * as TablerIcons from "angular-tabler-icons/icons";
+
+@NgModule({
+  imports: [
+    TablerIconsModule.pick(TablerIcons, {
+      // Ignore warnings, such as "Tabler Icon not found", for example:
+      //   ignoreWarnings: environment.production,
+      ignoreWarnings: true,
+    }),
+  ],
+  exports: [TablerIconsModule],
+})
+export class IconsModule {}
+```
+
+## Pick all icons
+
+You can import all icons at once by doing the following. However, keep in mind that by doing this, all icons will end up in your application bundle. While this may not be much of an issue for prototyping, **it is not recommended for any application that you plan to release**.
+
+```ts
+import { TablerIconsModule } from "angular-tabler-icons";
+import * as TablerIcons from "angular-tabler-icons/icons";
+
+@NgModule({
+  imports: [TablerIconsModule.pick(TablerIcons)],
+  exports: [TablerIconsModule],
+})
+export class IconsModule {}
+```
+
 ### NgModule (Legacy)
 
 _1. Generate a module to host the icons you'll import_
@@ -152,81 +222,11 @@ After importing the _IconsModule_ in your feature or shared module, use the icon
 <i-tabler name="brand-github" class="someclass"></i-tabler>
 ```
 
-## Available icons
-
-List of available icons: <https://tabler.io/icons>
-
-This version includes **Tabler Icons v3.22.0**, see [changelog](https://tabler.io/icons/changelog) to know which icons are available.
-
-## Styling icons
-
-Each icon can be styled separately with CSS:
-
-```html
-<i-tabler name="camera" class="big fill-red stroke-blue thin"></i-tabler>
-```
-
-```css
-.big {
-  height: 50px;
-  width: 50px;
-}
-
-.fill-red {
-  fill: red;
-}
-
-.stroke-blue {
-  color: blue;
-}
-
-.thin {
-  stroke-width: 1px;
-}
-```
-
-## Options
-
-Some options are available to configure the module:
-
-```ts
-import { environment } from "../environments/environment";
-import { TablerIconsModule } from "angular-tabler-icons";
-import * as TablerIcons from "angular-tabler-icons/icons";
-
-@NgModule({
-  imports: [
-    TablerIconsModule.pick(TablerIcons, {
-      // Ignore warnings, such as "Tabler Icon not found", for example:
-      //   ignoreWarnings: environment.production,
-      ignoreWarnings: true,
-    }),
-  ],
-  exports: [TablerIconsModule],
-})
-export class IconsModule {}
-```
-
-## Pick all icons
-
-You can import all icons at once by doing the following. However, keep in mind that by doing this, all icons will end up in your application bundle. While this may not be much of an issue for prototyping, **it is not recommended for any application that you plan to release**.
-
-```ts
-import { TablerIconsModule } from "angular-tabler-icons";
-import * as TablerIcons from "angular-tabler-icons/icons";
-
-@NgModule({
-  imports: [TablerIconsModule.pick(TablerIcons)],
-  exports: [TablerIconsModule],
-})
-export class IconsModule {}
-```
-
 ## Angular version compatibility
 
 | Angular | angular-tabler-icons |
 | ------- | -------------------- |
-| 18      | 3.10.0+              |
+| 18 & 19 | 3.22.0+              |
 | 17      | 2.40.1+              |
 | 16      | 2.21.1+              |
 | 15      | 1.117.1+             |
