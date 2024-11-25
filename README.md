@@ -1,6 +1,6 @@
 # angular-tabler-icons
 
-[![tabler-icons-version](https://img.shields.io/badge/Tabler%20Icons-v3.1.0-%23206bc4?style=flat-square)](https://tabler.io/icons)
+[![tabler-icons-version](https://img.shields.io/badge/Tabler%20Icons-v3.22.0-%23206bc4?style=flat-square)](https://tabler.io/icons)
 [![license](https://img.shields.io/npm/l/angular-tabler-icons.svg?style=flat-square)]()
 [![downloads](https://img.shields.io/npm/dm/angular-tabler-icons?style=flat-square)]()
 
@@ -156,7 +156,7 @@ After importing the _IconsModule_ in your feature or shared module, use the icon
 
 List of available icons: <https://tabler.io/icons>
 
-This version includes **Tabler Icons v3.1.0**, see [changelog](https://tabler.io/icons/changelog) to know which icons are available.
+This version includes **Tabler Icons v3.22.0**, see [changelog](https://tabler.io/icons/changelog) to know which icons are available.
 
 ## Styling icons
 

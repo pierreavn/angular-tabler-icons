@@ -4,6 +4,7 @@ import {
   IconNumber123,
   IconAdOff,
   IconHeartFilled,
+  IconGolfFilled,
 } from 'angular-tabler-icons/icons';
 
 @Component({
@@ -17,6 +18,7 @@ import {
             IconNumber123,
             IconAdOff,
             IconHeartFilled,
+            IconGolfFilled,
         }),
     ],
     template: `
@@ -40,6 +42,11 @@ import {
     <fieldset>
       <legend>heart-filled (style, red)</legend>
       <i-tabler name="heart-filled" style="color: red;"></i-tabler>
+    </fieldset>
+
+    <fieldset>
+      <legend>golf-filled (style, blue)</legend>
+      <i-tabler name="golf-filled" style="color: blue;"></i-tabler>
     </fieldset>
   `
 })
