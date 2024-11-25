@@ -1,25 +1,24 @@
-import { NgModule, ModuleWithProviders, Optional } from '@angular/core';
+import { NgModule, ModuleWithProviders, inject } from '@angular/core';
 import { TablerIconComponent } from './tabler-icon.component';
-import { OptionsProvider } from './options.provider';
+import { OPTIONS_TOKEN } from './options.provider';
 import { OptionIcons, Options } from './options.interfaces';
 
-
+/**
+ * @deprecated
+ *
+ */
 @NgModule({
-  declarations: [
-    TablerIconComponent
-  ],
-  exports: [
-    TablerIconComponent
-  ]
+  imports: [TablerIconComponent],
+  exports: [TablerIconComponent],
 })
 export class TablerIconsModule {
-  constructor(
-    @Optional() private options: OptionsProvider
-  ) {
-    if ( !this.options ) {
+  private options = inject(OPTIONS_TOKEN, { optional: true });
+
+  constructor() {
+    if (!this.options) {
       throw new Error(
         `No icon provided. Make sure to use 'TablerIconsModule.pick({ ... })' when importing the module\n` +
-        `Refer to documentation on https://github.com/pierreavn/angular-tabler-icons`
+          `Refer to documentation on https://github.com/pierreavn/angular-tabler-icons`
       );
     }
   }
@@ -29,19 +28,22 @@ export class TablerIconsModule {
    * @param icons
    * @returns Module with options
    */
-  static pick(icons: OptionIcons, options?: Options): ModuleWithProviders<TablerIconsModule> {
+  static pick(
+    icons: OptionIcons,
+    options?: Options
+  ): ModuleWithProviders<TablerIconsModule> {
     return {
       ngModule: TablerIconsModule,
       providers: [
         {
-          provide: OptionsProvider,
+          provide: OPTIONS_TOKEN,
           useValue: {
             icons,
-            ...options
+            ...options,
           },
-          multi: true
-        }
-      ]
+          multi: true,
+        },
+      ],
     };
   }
 }

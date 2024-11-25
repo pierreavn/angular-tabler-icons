@@ -3,4 +3,4 @@ export type Options = {
   ignoreWarnings?: boolean;
 }
 
-export type OptionIcons = {[key: string]: string};
+export type OptionIcons = Record<string, string>;
