@@ -1,0 +1,47 @@
+{
+  "projectName": "angular-tabler-icons",
+  "projectOwner": "pierreavn",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "pierreavn",
+      "name": "Pierre",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8176955?v=4",
+      "profile": "https://github.com/pierreavn",
+      "contributions": [
+        "code",
+        "doc",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "the-ult",
+      "name": "Arjen Althoff",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4863062?v=4",
+      "profile": "https://github.com/the-ult",
+      "contributions": [
+        "code",
+        "doc",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "janschab",
+      "name": "Jan Schab",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56731968?v=4",
+      "profile": "https://github.com/janschab",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "linkToUsage": false
+}

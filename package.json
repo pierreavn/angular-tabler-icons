@@ -9,7 +9,9 @@
     "lib:build": "ng build angular-tabler-icons --configuration production && npm run lib:copy-assets",
     "lib:publish": "npm publish dist/angular-tabler-icons",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "private": true,
   "type": "module",
@@ -33,6 +35,7 @@
     "@angular/compiler-cli": "~19.0.0",
     "@types/jasmine": "~5.1.4",
     "@types/node": "~22.9.1",
+    "all-contributors-cli": "^6.26.1",
     "angular-eslint": "18.4.1",
     "del": "~8.0.0",
     "eslint": "~9.15.0",
