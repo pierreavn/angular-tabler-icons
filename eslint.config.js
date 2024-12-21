@@ -1,8 +1,8 @@
-const eslint = require("@eslint/js");
-const tseslint = require("typescript-eslint");
-const angular = require("angular-eslint");
+import eslint from '@eslint/js';
+import * as tseslint from 'typescript-eslint';
+import * as angular from 'angular-eslint';
 
-module.exports = tseslint.config(
+export default tseslint.config(
   {
     files: ["**/*.ts"],
     extends: [
