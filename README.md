@@ -29,6 +29,8 @@ This package allows you to use the [Tabler Icons](https://tabler.io/icons) in yo
 - [Bundle Size Considerations](#bundle-size-considerations)
 - [Angular compatibility](#angular-compatibility)
   - [Angular 19 | \>= v3.22](#angular-19---v322)
+    - [Breaking Changes](#breaking-changes)
+    - [Migration Guide](#migration-guide)
   - [Angular 18 | \<= v3.10.0](#angular-18---v3100)
 - [Contributing](#contributing)
   - [How to rebuild for newer tabler icons version](#how-to-rebuild-for-newer-tabler-icons-version)
@@ -296,9 +298,54 @@ _Therefore angular-tabler-icons is not following the official SemVer._
 
 ### Angular 19 | >= v3.22
 
-With `angular-tabler-icons@3.22.0` there are **BREAKING CHANGES**.
+This version uses Angular's Signals API and standalone components by default.
 
-We are using the new signals API's like `input()`, `output()`, but also the new `linkedSignal()`, therefore this release is **NOT** backwards compatible
+#### Breaking Changes
+
+- Removed `TablerIconsModule.pick()` in favor of `provideTablerIcons()`
+- Icons now use standalone components
+- Requires Angular 19.0.0 or higher
+- Updated to ES2022 module format
+
+#### Migration Guide
+
+From NgModule syntax:
+
+```typescript
+@NgModule({
+  imports: [TablerIconsModule.pick(icons)]
+})
+```
+
+To standalone syntax:
+
+```typescript
+import { provideTablerIcons } from "angular-tabler-icons";
+
+export const appConfig: ApplicationConfig = {
+  providers: [provideTablerIcons({ icons })],
+};
+```
+
+or
+
+```typescript
+@Component({
+  selector: 'my-standalone-component',
+  imports: [TablerIconComponent],
+  /**
+   * Provide the icons which you want to use in this component.
+   */
+  providers: [
+    provideTablerIcons({
+      IconNumber123,
+      IconHeartFilled,
+    }),
+  ],
+,
+})
+export class StandaloneComponent {}
+```
 
 ### Angular 18 | <= v3.10.0
 
