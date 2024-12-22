@@ -5,8 +5,46 @@
 [![downloads](https://img.shields.io/npm/dm/angular-tabler-icons?style=flat-square)]()
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+## Table of Contents
+
+1. [Quick Start](#quick-start)
+2. [Install](#install)
+3. [Usage](#usage)
+4. [Available Icons](#available-icons)
+5. [Styling Icons](#styling-icons)
+6. [Options](#options)
+7. [Angular Compatibility](#angular-compatibility)
+8. [Contributing](#contributing)
+9. [How to rebuild for newer tabler icons version](#how-to-rebuild-for-newer-tabler-icons-version)
+10. [Contributors](#contributors-)
+
+## Quick Start
+
+For a minimal setup, install the package, import the icons you need, and start using them in your templates:
+
+```bash
+npm install angular-tabler-icons
+```
+
+```ts
+import { Component } from "@angular/core";
+import { TablerIconComponent, provideTablerIcons } from "angular-tabler-icons";
+import { IconNumber123 } from "angular-tabler-icons/icons";
+
+@Component({
+  selector: "app-demo",
+  standalone: true,
+  imports: [TablerIconComponent],
+  providers: [provideTablerIcons({ IconNumber123 })],
+  template: '<i-tabler name="number-123"></i-tabler>',
+})
+export class DemoComponent {}
+```
 
 ## Description
 
@@ -16,7 +54,7 @@ This package allows you to use the [Tabler Icons](https://tabler.io/icons) in yo
 
 ### Install the package
 
-```sh
+```bash
 npm i angular-tabler-icons
 ```
 
@@ -42,7 +80,7 @@ _Therefore angular-tabler-icons is not following the official SemVer._
 
 ## Usage
 
-### Standalone
+### Standalone (Recommended)
 
 If you are using Standalone Components, use the `provideTablerIcons()`
 
