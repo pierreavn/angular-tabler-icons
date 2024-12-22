@@ -12,7 +12,7 @@ This package allows you to use the [Tabler Icons](https://tabler.io/icons) in yo
 
 ## Install
 
-### 1. Install the package
+### Install the package
 
 ```sh
 npm i angular-tabler-icons
@@ -20,55 +20,23 @@ npm i angular-tabler-icons
 
 ### Angular version compatibility
 
-| Angular | angular-tabler-icons       |
-| ------- | -------------------------- |
-| 19      | 3.22.0+                    |
-| 18      | _NOT OFFICIALLY SUPPORTED_ |
-| 17      | 2.40.1+                    |
-| 16      | 2.21.1+                    |
-| 15      | 1.117.1+                   |
-| 14      | 1.72.1+                    |
-| 13      | 1.53.1+                    |
-| 12      | 1.41.3+                    |
-| 11      | 1.41.0+                    |
-
-#### Angular 19 | >= v3.22
-
-With `angular-tabler-icons@3.22.0` we made some breaking changes.
-
-We are using the new signals API's like `input()`, `output()`, but also the new `linkedSignal()`, therefore this release is **NOT** backwards compatible
+| Angular | angular-tabler-icons                                               |
+| ------- | ------------------------------------------------------------------ |
+| 19      | 3.22.0+ [see "Angular 19" section](#angular-19---v322)             |
+| 18      | 2.40.1 - 3.1.0 [see "Angular 18" section](<(#angular-18---v3100)>) |
+| 17      | 2.40.1+                                                            |
+| 16      | 2.21.1+                                                            |
+| 15      | 1.117.1+                                                           |
+| 14      | 1.72.1+                                                            |
+| 13      | 1.53.1+                                                            |
+| 12      | 1.41.3+                                                            |
+| 11      | 1.41.0+                                                            |
 
 **N.B.**
 
-_(We should have released a version 4.0.0)_
+_Versions are aligned with the [tabler iconst](https://github.com/tabler/tabler-icons/releases) versions._
 
-#### Angular 18 | <= v3.10.0
-
-Angular 18 is _not officially supported_, however with `3.1.x` you can use the [overrides](https://docs.npmjs.com/cli/v10/configuring-npm/package-json?v=true#overrides) in your package.json when using `npm`
-
-```json
-"overrides": {
-  "angular-tabler-icons": {
-    "peerDependencies": {
-      "@angular/common": "18.x",
-      "@angular/core": "18.x"
-    }
-  }
-}
-```
-
-With `pnpm` you can use the [peerDependencyRules.allowVersions](https://pnpm.io/package_json#pnpmpeerdependencyrulesallowedversions) in your package.json
-
-```json
-"pnpm": {
-    "peerDependencyRules": {
-      "allowedVersions": {
-        "angular-tabler-icons>@angular/common": "18",
-        "angular-tabler-icons>@angular/core": "18"
-      }
-    }
-  },
-```
+_Therefore angular-tabler-icons is not following the official SemVer._
 
 ## Usage
 
@@ -270,6 +238,42 @@ After importing the _IconsModule_ in your feature or shared module, use the icon
 <i-tabler name="heart" style="color: red;"></i-tabler>
 <i-tabler name="heart-filled" style="color: red;"></i-tabler>
 <i-tabler name="brand-github" class="someclass"></i-tabler>
+```
+
+## Angular compatibility
+
+### Angular 19 | >= v3.22
+
+With `angular-tabler-icons@3.22.0` there are **BREAKING CHANGES**.
+
+We are using the new signals API's like `input()`, `output()`, but also the new `linkedSignal()`, therefore this release is **NOT** backwards compatible
+
+### Angular 18 | <= v3.10.0
+
+Angular 18 is _not officially supported_, however with `3.1.x` you can use the [overrides](https://docs.npmjs.com/cli/v10/configuring-npm/package-json?v=true#overrides) in your package.json when using `npm`
+
+```json
+"overrides": {
+  "angular-tabler-icons": {
+    "peerDependencies": {
+      "@angular/common": "18.x",
+      "@angular/core": "18.x"
+    }
+  }
+}
+```
+
+With `pnpm` you can use the [peerDependencyRules.allowVersions](https://pnpm.io/package_json#pnpmpeerdependencyrulesallowedversions) in your package.json
+
+```json
+"pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "angular-tabler-icons>@angular/common": "18",
+        "angular-tabler-icons>@angular/core": "18"
+      }
+    }
+  },
 ```
 
 ## Contributing
