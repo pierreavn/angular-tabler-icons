@@ -280,6 +280,10 @@ After importing the _IconsModule_ in your feature or shared module, use the icon
 <i-tabler name="brand-github" class="someclass"></i-tabler>
 ```
 
+## Minimizing bundle size
+
+Even though it's possible to import all icons at once, it's strongly recommended to pick only the icons you need. Importing every icon can rapidly increase your bundle size and affect your app’s performance.
+
 ## Angular compatibility
 
 ### Angular 19 | >= v3.22
