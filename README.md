@@ -1,4 +1,4 @@
-# angular-tabler-icons
+# angular-tabler-icons <!-- omit in toc -->
 
 [![tabler-icons-version](https://img.shields.io/badge/Tabler%20Icons-v3.26.0-%23206bc4?style=flat-square)](https://tabler.io/icons)
 [![license](https://img.shields.io/npm/l/angular-tabler-icons.svg?style=flat-square)]()
@@ -10,18 +10,29 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-## Table of Contents
+This package allows you to use the [Tabler Icons](https://tabler.io/icons) in your angular applications. Tabler Icons is a set of free MIT-licensed high-quality SVG icons for you to use in your web projects. Each icon is designed on a 24x24 grid and a 2px stroke.
 
-1. [Quick Start](#quick-start)
-2. [Install](#install)
-3. [Usage](#usage)
-4. [Available Icons](#available-icons)
-5. [Styling Icons](#styling-icons)
-6. [Options](#options)
-7. [Angular Compatibility](#angular-compatibility)
-8. [Contributing](#contributing)
-9. [How to rebuild for newer tabler icons version](#how-to-rebuild-for-newer-tabler-icons-version)
-10. [Contributors](#contributors-)
+- [Quick Start](#quick-start)
+- [Usage](#usage)
+  - [Available icons](#available-icons)
+  - [Standalone (Recommended)](#standalone-recommended)
+    - [Component](#component)
+    - [HTML](#html)
+  - [Styling icons](#styling-icons)
+  - [Options](#options)
+  - [Pick all icons](#pick-all-icons)
+  - [NgModule (Legacy)](#ngmodule-legacy)
+    - [Generate a module to host the icons you'll import\_](#generate-a-module-to-host-the-icons-youll-import_)
+    - [Import assets](#import-assets)
+    - [Import IconsModule](#import-iconsmodule)
+    - [Use it in template\_](#use-it-in-template_)
+- [Bundle Size Considerations](#bundle-size-considerations)
+- [Angular compatibility](#angular-compatibility)
+  - [Angular 19 | \>= v3.22](#angular-19---v322)
+  - [Angular 18 | \<= v3.10.0](#angular-18---v3100)
+- [Contributing](#contributing)
+  - [How to rebuild for newer tabler icons version](#how-to-rebuild-for-newer-tabler-icons-version)
+- [Contributors ✨](#contributors-)
 
 ## Quick Start
 
@@ -46,39 +57,13 @@ import { IconNumber123 } from "angular-tabler-icons/icons";
 export class DemoComponent {}
 ```
 
-## Description
-
-This package allows you to use the [Tabler Icons](https://tabler.io/icons) in your angular applications. Tabler Icons is a set of free MIT-licensed high-quality SVG icons for you to use in your web projects. Each icon is designed on a 24x24 grid and a 2px stroke.
-
-## Install
-
-### Install the package
-
-```bash
-npm i angular-tabler-icons
-```
-
-### Angular version compatibility
-
-| Angular | angular-tabler-icons                                               |
-| ------- | ------------------------------------------------------------------ |
-| 19      | 3.22.0+ [see "Angular 19" section](#angular-19---v322)             |
-| 18      | 2.40.1 - 3.1.0 [see "Angular 18" section](<(#angular-18---v3100)>) |
-| 17      | 2.40.1+                                                            |
-| 16      | 2.21.1+                                                            |
-| 15      | 1.117.1+                                                           |
-| 14      | 1.72.1+                                                            |
-| 13      | 1.53.1+                                                            |
-| 12      | 1.41.3+                                                            |
-| 11      | 1.41.0+                                                            |
-
-**N.B.**
-
-_Versions are aligned with the [tabler iconst](https://github.com/tabler/tabler-icons/releases) versions._
-
-_Therefore angular-tabler-icons is not following the official SemVer._
-
 ## Usage
+
+### Available icons
+
+List of available icons: <https://tabler.io/icons>
+
+This version includes **Tabler Icons v3.26.0**, see [changelog](https://tabler.io/icons/changelog) to know which icons are available.
 
 ### Standalone (Recommended)
 
@@ -138,13 +123,7 @@ export class StandaloneComponent {}
 </fieldset>
 ```
 
-## Available icons
-
-List of available icons: <https://tabler.io/icons>
-
-This version includes **Tabler Icons v3.26.0**, see [changelog](https://tabler.io/icons/changelog) to know which icons are available.
-
-## Styling icons
+### Styling icons
 
 Each icon can be styled separately with CSS:
 
@@ -171,7 +150,7 @@ Each icon can be styled separately with CSS:
 }
 ```
 
-## Options
+### Options
 
 Some options are available to configure the module:
 
@@ -193,7 +172,7 @@ import * as TablerIcons from "angular-tabler-icons/icons";
 export class IconsModule {}
 ```
 
-## Pick all icons
+### Pick all icons
 
 You can import all icons at once by doing the following. However, keep in mind that by doing this, all icons will end up in your application bundle. While this may not be much of an issue for prototyping, **it is not recommended for any application that you plan to release**.
 
@@ -210,13 +189,13 @@ export class IconsModule {}
 
 ### NgModule (Legacy)
 
-_1. Generate a module to host the icons you'll import_
+#### Generate a module to host the icons you'll import\_
 
 ```sh
 ng generate module icons
 ```
 
-_2. Import assets_
+#### Import assets
 
 You need to import:
 
@@ -251,7 +230,7 @@ export class IconsModule {}
 // 2. Don't forget to pick some icons using TablerIconsModule.pick({ ... })
 ```
 
-_3. Import IconsModule_
+#### Import IconsModule
 
 If you are using NgModules, import it this way:
 
@@ -269,7 +248,7 @@ import { IconsModule } from "./icons.module";
 export class MyModule {}
 ```
 
-_4. Use it in template_
+#### Use it in template\_
 
 After importing the _IconsModule_ in your feature or shared module, use the icons as follows:
 
@@ -280,11 +259,40 @@ After importing the _IconsModule_ in your feature or shared module, use the icon
 <i-tabler name="brand-github" class="someclass"></i-tabler>
 ```
 
-## Minimizing bundle size
+## Bundle Size Considerations
 
-Even though it's possible to import all icons at once, it's strongly recommended to pick only the icons you need. Importing every icon can rapidly increase your bundle size and affect your app’s performance.
+⚠️ **Important**: Importing all icons will increase your bundle size. For production:
+
+✅ **Recommended**:
+
+- Import only the icons you need
+- Use tree-shakable standalone providers
+- Consider lazy loading icon modules
+
+❌ **Not recommended**:
+
+- Importing all icons at once
+- Using `TablerIcons.*` import syntax
 
 ## Angular compatibility
+
+| Angular | angular-tabler-icons                                               |
+| ------- | ------------------------------------------------------------------ |
+| 19      | 3.22.0+ [see "Angular 19" section](#angular-19---v322)             |
+| 18      | 2.40.1 - 3.1.0 [see "Angular 18" section](<(#angular-18---v3100)>) |
+| 17      | 2.40.1+                                                            |
+| 16      | 2.21.1+                                                            |
+| 15      | 1.117.1+                                                           |
+| 14      | 1.72.1+                                                            |
+| 13      | 1.53.1+                                                            |
+| 12      | 1.41.3+                                                            |
+| 11      | 1.41.0+                                                            |
+
+**N.B.**
+
+_Versions are aligned with the [tabler iconst](https://github.com/tabler/tabler-icons/releases) versions._
+
+_Therefore angular-tabler-icons is not following the official SemVer._
 
 ### Angular 19 | >= v3.22
 
@@ -330,7 +338,7 @@ yarn lib:generate  # generate components from Tabler Icons
 yarn lib:build  # build angular library
 ```
 
-## How to rebuild for newer tabler icons version
+### How to rebuild for newer tabler icons version
 
 1. Run GitHub actions workflow `Automatic PR on Tabler Icons Release`, with new Tabler Icons version (e.g. `2.40.0`). This workflow will create automatically a new Pull Request.
 2. Approve and Merge the generated Pull Request.
