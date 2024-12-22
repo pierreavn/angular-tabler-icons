@@ -4,11 +4,13 @@
 [![license](https://img.shields.io/npm/l/angular-tabler-icons.svg?style=flat-square)]()
 [![downloads](https://img.shields.io/npm/dm/angular-tabler-icons?style=flat-square)]()
 
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 ## Description
 
 This package allows you to use the [Tabler Icons](https://tabler.io/icons) in your angular applications. Tabler Icons is a set of free MIT-licensed high-quality SVG icons for you to use in your web projects. Each icon is designed on a 24x24 grid and a 2px stroke.
-
-**✨ Many thanks to [Arjen](https://github.com/the-ult) and [janschab](https://github.com/janschab) for their contribution on this project!**
 
 ## Install
 
@@ -293,3 +295,27 @@ yarn lib:build  # build angular library
 3. Create a release/tag with the new Tabler Icons version.
 
 Package is automatically rebuilt and published, with the GitHub actions workflow `Build and Publish package`.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/pierreavn"><img src="https://avatars.githubusercontent.com/u/8176955?v=4?s=100" width="100px;" alt="Pierre Avendano"/><br /><sub><b>Pierre</b></sub></a><br /><a href="https://github.com/pierreavn/angular-tabler-icons/commits?author=pierreavn" title="Code">💻</a> <a href="https://github.com/pierreavn/angular-tabler-icons/commits?author=pierreavn" title="Documentation">📖</a> <a href="#maintenance-pierreavn" title="Maintenance">🚧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/the-ult"><img src="https://avatars.githubusercontent.com/u/4863062?v=4?s=100" width="100px;" alt="Arjen Althoff"/><br /><sub><b>Arjen Althoff</b></sub></a><br /><a href="https://github.com/pierreavn/angular-tabler-icons/commits?author=the-ult" title="Code">💻</a> <a href="https://github.com/pierreavn/angular-tabler-icons/commits?author=the-ult" title="Documentation">📖</a> <a href="#maintenance-the-ult" title="Maintenance">🚧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/janschab"><img src="https://avatars.githubusercontent.com/u/56731968?v=4?s=100" width="100px;" alt="Jan Schab"/><br /><sub><b>Jan Schab</b></sub></a><br /><a href="https://github.com/pierreavn/angular-tabler-icons/commits?author=janschab" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
