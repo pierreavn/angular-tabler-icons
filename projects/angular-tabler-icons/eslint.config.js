@@ -1,8 +1,13 @@
 // @ts-check
-const tseslint = require('typescript-eslint');
-const rootConfig = require('../../eslint.config.js');
+import tseslint from 'typescript-eslint';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+import rootConfig from '../../eslint.config.js';
 
-module.exports = tseslint.config(
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+export default tseslint.config(
   ...rootConfig,
   {
     files: ['**/*.ts'],
