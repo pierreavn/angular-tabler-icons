@@ -302,7 +302,7 @@ This version uses Angular's Signals API and standalone components by default.
 
 #### Breaking Changes
 
-- Removed `TablerIconsModule.pick()` in favor of `provideTablerIcons()`
+- Deprecated `TablerIconsModule.pick()` in favor of `provideTablerIcons()`
 - Icons now use standalone components
 - Requires Angular 19.0.0 or higher
 - Updated to ES2022 module format
