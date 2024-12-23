@@ -4,8 +4,7 @@ import { OPTIONS_TOKEN } from './options.provider';
 import { OptionIcons, Options } from './options.interfaces';
 
 /**
- * @deprecated
- *
+ * @deprecated Use `TablerIconsModule.pick({ ... })` instead for standalone components
  */
 @NgModule({
   imports: [TablerIconComponent],
