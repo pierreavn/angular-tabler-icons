@@ -54,7 +54,7 @@ import { IconNumber123 } from "angular-tabler-icons/icons";
   standalone: true,
   imports: [TablerIconComponent],
   providers: [provideTablerIcons({ IconNumber123 })],
-  template: '< name="number-123"></>',
+  template: '<tabler-icon name="number-123"></tabler-icon>',
 })
 export class DemoComponent {}
 ```
@@ -106,22 +106,22 @@ export class StandaloneComponent {}
 ```html
 <fieldset>
   <legend>123</legend>
-  < name="number-123"></>
+  <tabler-icon name="number-123"></tabler-icon>
 </fieldset>
 
 <fieldset>
   <legend>123 (style, big)</legend>
-  < name="number-123" style="height: 60px; width: 60px;"></>
+  <tabler-icon name="number-123" style="height: 60px; width: 60px;"></tabler-icon>
 </fieldset>
 
 <fieldset>
   <legend>ad-off (style, red)</legend>
-  < name="ad-off" style="color: red;"></>
+  <tabler-icon name="ad-off" style="color: red;"></tabler-icon>
 </fieldset>
 
 <fieldset>
   <legend>heart-filled (style, red)</legend>
-  < name="heart-filled" style="color: red;"></>
+  <tabler-icon name="heart-filled" style="color: red;"></tabler-icon>
 </fieldset>
 ```
 
@@ -130,7 +130,7 @@ export class StandaloneComponent {}
 Each icon can be styled separately with CSS:
 
 ```html
-< name="camera" class="big fill-red stroke-blue thin"></>
+<tabler-icon name="camera" class="big fill-red stroke-blue thin"></tabler-icon>
 ```
 
 ```css
@@ -255,10 +255,10 @@ export class MyModule {}
 After importing the _IconsModule_ in your feature or shared module, use the icons as follows:
 
 ```html
-< name="camera"></>
-< name="heart" style="color: red;"></>
-< name="heart-filled" style="color: red;"></>
-< name="brand-github" class="someclass"></>
+<tabler-icon name="camera"></tabler-icon>
+<tabler-icon name="heart" style="color: red;"></tabler-icon>
+<tabler-icon name="heart-filled" style="color: red;"></tabler-icon>
+<tabler-icon name="brand-github" class="someclass"></tabler-icon>
 ```
 
 ## Bundle Size Considerations
