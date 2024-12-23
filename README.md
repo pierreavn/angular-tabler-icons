@@ -54,7 +54,7 @@ import { IconNumber123 } from "angular-tabler-icons/icons";
   standalone: true,
   imports: [TablerIconComponent],
   providers: [provideTablerIcons({ IconNumber123 })],
-  template: '<i-tabler name="number-123"></i-tabler>',
+  template: '< name="number-123"></>',
 })
 export class DemoComponent {}
 ```
@@ -106,22 +106,22 @@ export class StandaloneComponent {}
 ```html
 <fieldset>
   <legend>123</legend>
-  <i-tabler name="number-123"></i-tabler>
+  < name="number-123"></>
 </fieldset>
 
 <fieldset>
   <legend>123 (style, big)</legend>
-  <i-tabler name="number-123" style="height: 60px; width: 60px;"></i-tabler>
+  < name="number-123" style="height: 60px; width: 60px;"></>
 </fieldset>
 
 <fieldset>
   <legend>ad-off (style, red)</legend>
-  <i-tabler name="ad-off" style="color: red;"></i-tabler>
+  < name="ad-off" style="color: red;"></>
 </fieldset>
 
 <fieldset>
   <legend>heart-filled (style, red)</legend>
-  <i-tabler name="heart-filled" style="color: red;"></i-tabler>
+  < name="heart-filled" style="color: red;"></>
 </fieldset>
 ```
 
@@ -130,7 +130,7 @@ export class StandaloneComponent {}
 Each icon can be styled separately with CSS:
 
 ```html
-<i-tabler name="camera" class="big fill-red stroke-blue thin"></i-tabler>
+< name="camera" class="big fill-red stroke-blue thin"></>
 ```
 
 ```css
@@ -201,7 +201,7 @@ ng generate module icons
 
 You need to import:
 
-- TablerIconsModule, as it contains the `<i-tabler>` component
+- TablerIconsModule, as it contains the `<>` component
 - The icons that you need
 
 We put this in IconsModule for modularity. See example below:
@@ -228,7 +228,7 @@ const icons = {
 export class IconsModule {}
 
 // NOTES:
-// 1. We add TablerIconsModule to the 'exports', since the <i-tabler> component will be used in templates of parent module
+// 1. We add TablerIconsModule to the 'exports', since the <> component will be used in templates of parent module
 // 2. Don't forget to pick some icons using TablerIconsModule.pick({ ... })
 ```
 
@@ -255,10 +255,10 @@ export class MyModule {}
 After importing the _IconsModule_ in your feature or shared module, use the icons as follows:
 
 ```html
-<i-tabler name="camera"></i-tabler>
-<i-tabler name="heart" style="color: red;"></i-tabler>
-<i-tabler name="heart-filled" style="color: red;"></i-tabler>
-<i-tabler name="brand-github" class="someclass"></i-tabler>
+< name="camera"></>
+< name="heart" style="color: red;"></>
+< name="heart-filled" style="color: red;"></>
+< name="brand-github" class="someclass"></>
 ```
 
 ## Bundle Size Considerations
